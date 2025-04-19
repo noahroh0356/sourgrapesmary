@@ -1,8 +1,8 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 836,
-    "gatchaCoin": 0,
+    "coin": 50,
+    "gatchaCoin": 87,
     "userFurnitureList": [
         {
             "furniturekey": "table0_0",
@@ -10,29 +10,9 @@
             "setup": true
         },
         {
-            "furniturekey": "table2_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
             "furniturekey": "table1_0",
             "purchased": true,
             "setup": true
-        },
-        {
-            "furniturekey": "table3_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table4_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table5_0",
-            "purchased": false,
-            "setup": false
         }
     ],
     "userKitchenList": [
@@ -42,22 +22,7 @@
             "setup": true
         },
         {
-            "kitchenkey": "KitchenBar2_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
             "kitchenkey": "KitchenBar1_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "kitchenkey": "KitchenBar3_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "kitchenkey": "KitchenBar4_0",
             "purchased": true,
             "setup": true
         }
@@ -76,7 +41,7 @@
             "open": true
         },
         {
-            "key": "Racoon2",
+            "key": "Hedgehog1",
             "open": true
         },
         {
@@ -84,21 +49,13 @@
             "open": true
         },
         {
-            "key": "Hedgehog1",
-            "open": true
-        },
-        {
-            "key": "Beaver1",
+            "key": "Racoon2",
             "open": true
         }
     ],
     "userFoxes": [
         {
-            "key": "redFox",
-            "purchased": true
-        },
-        {
-            "key": "desertFox",
+            "key": "northpoleFox",
             "purchased": true
         }
     ],
@@ -108,11 +65,11 @@
             "open": true
         },
         {
-            "key": "wine_1",
+            "key": "wine_2",
             "open": true
         },
         {
-            "key": "wine_3",
+            "key": "wine_1",
             "open": true
         }
     ]

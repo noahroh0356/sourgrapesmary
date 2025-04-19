@@ -9,6 +9,7 @@ public class CloseButton : MonoBehaviour
 
     public GameObject bgmObject; // "BGM" 오브젝트
     public GameObject gatchaBgmObject; // "gatchabgm" 오브젝트
+    public GatchaHead gatchaHead;
 
 
     public void OnClickButton()
@@ -22,6 +23,7 @@ public class CloseButton : MonoBehaviour
 
         if (gatchaBgmObject != null)
         {
+            gatchaHead.ResetGatcha();
             gatchaBgmObject.SetActive(false);
         }
     }

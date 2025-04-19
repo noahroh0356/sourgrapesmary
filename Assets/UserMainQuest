@@ -1,7 +1,7 @@
 {
-    "mainQuestType": 3,
-    "curQuestIndex": 25,
-    "process": 0,
+    "mainQuestType": 0,
+    "curQuestIndex": 9,
+    "process": 8,
     "processing": true,
     "clearPurchaseFurnitureCount": 0,
     "clearPurchaseKitchenCount": 0

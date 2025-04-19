@@ -12,6 +12,8 @@ public class GachaButton : MonoBehaviour
     public GameObject bgmObject; // "BGM" 오브젝트
     public GameObject gatchaBgmObject; // "gatchabgm" 오브젝트
 
+    public GatchaHead gatchaHead;
+
     public void OnClickButton()
     {
 
@@ -27,6 +29,7 @@ public class GachaButton : MonoBehaviour
         {
             User.Instance.userData.gatchaCoin -= 1;
             activePanel.gameObject.SetActive(true);
+            //gatchaHead.ResetGatcha();
             gatchaManager.StartGacha();
 
         }

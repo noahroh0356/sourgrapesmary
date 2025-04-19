@@ -192,7 +192,7 @@ public class GatchaHead : MonoBehaviour
     {
         if (success == false)
         {
-            yield return new WaitForSeconds(Random.Range(0.3f, 1.2f));
+            yield return new WaitForSeconds(Random.Range(0.8f, 1.2f));
             Debug.Log("실패했으니 떨어뜨린다");
 
             gBall.rgdy.bodyType = RigidbodyType2D.Dynamic;
@@ -315,7 +315,7 @@ IEnumerator CoProcessMove()
         gatchaCanvas.gameObject.SetActive(false);
 
         closeButton.OnClickButton();
-        ResetGatcha();
+        //ResetGatcha();
     }
 
     public void ResetGatcha() // *가챠리

@@ -109,13 +109,45 @@ public class MenuManager : MonoBehaviour
         menuDatas[11].menuImage = Resources.Load<Sprite>("Images/wine_11");
     }
 
-    //주문 가능한 메뉴 데이터 중에 랜덤으로 반환
     public MenuData GetRandomMenuData()
     {
-        int randomIdx = Random.Range(0, userData.userWines.Count);
-        return menuDatas[randomIdx];
-    }
+        if (userData.userWines == null || userData.userWines.Count == 0)
+        {
+            Debug.LogError("사용 가능한 와인 데이터가 없습니다.");
+            return null; // 또는 다른 기본 메뉴 데이터 반환
+        }
 
+        // 활성화된(open이 true인) 와인만 담을 리스트 생성
+        List<UserWine> openWines = new List<UserWine>();
+        for (int i = 0; i < userData.userWines.Count; i++)
+        {
+            if (userData.userWines[i].open)
+            {
+                openWines.Add(userData.userWines[i]);
+            }
+        }
+
+        if (openWines.Count == 0)
+        {
+            Debug.LogError("활성화된 와인 데이터가 없습니다.");
+            return null;
+        }
+
+        int randomIdx = Random.Range(0, openWines.Count);
+        string randomWineKey = openWines[randomIdx].key; // UserWine 객체의 key 값 접근
+
+        // for 문을 사용하여 menuDatas 배열 순회
+        for (int i = 0; i < menuDatas.Length; i++)
+        {
+            if (menuDatas[i].key == randomWineKey)
+            {
+                return menuDatas[i];
+            }
+        }
+
+        Debug.LogError($"키 '{randomWineKey}'에 해당하는 메뉴 데이터를 찾을 수 없습니다.");
+        return null; // 찾지 못했을 경우
+    }
 }
 
 [System.Serializable]
