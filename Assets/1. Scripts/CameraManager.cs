@@ -7,6 +7,8 @@ public class CameraManager : MonoBehaviour
 {
 
     Transform cameraTr;
+    public Transform rigthEnd;
+
     public static CameraManager Instance;
 
     public void Awake()
@@ -14,6 +16,15 @@ public class CameraManager : MonoBehaviour
         cameraTr = Camera.main.transform;
         Instance = this;
     }
+
+
+    private void Start()
+    {
+        float sideDistance = rigthEnd.position.x;
+        Camera.main.orthographicSize = sideDistance / Camera.main.aspect;
+        
+    }
+
 
     public void MoveTo(string areaName)
     {

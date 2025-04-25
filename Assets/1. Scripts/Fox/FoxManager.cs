@@ -125,6 +125,8 @@ public class FoxManager : MonoBehaviour
 public class FoxData
 {
     public string key;
+
+    public string name;
     public int price;
     public Sprite thum;
     public Fox foxPrefab;

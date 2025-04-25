@@ -18,6 +18,16 @@ public class FoxProductPanel : MonoBehaviour
         FoxManager mgr = FindObjectOfType<FoxManager>();
         foxData = mgr.GetFoxData(key);
         Pricetext.text = foxData.price.ToString();
+
+        Button button = gameObject.AddComponent<Button>();
+        button.onClick.AddListener(OnClickedOpenFox);
+    }
+
+    public void OnClickedOpenFox()
+    {
+        Debug.Log("OnClickedOpenFox" + key);
+        WorkerCanvas.Instance.Open(key);
+
     }
 
     public void OnClickPurchased()

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 
 public class KitchenBarProduct : MonoBehaviour
 {
@@ -15,6 +17,16 @@ public class KitchenBarProduct : MonoBehaviour
         KitchenManager mgr = FindObjectOfType<KitchenManager>();
         kitchenData = mgr.GetKitchenData(key);
         priceText.text = kitchenData.price.ToString();
+
+        Button button = gameObject.AddComponent<Button>();
+        button.onClick.AddListener(OnClickedOpenKitchen);
+    }
+
+    public void OnClickedOpenKitchen()
+    {
+        Debug.Log("kitchenbaproduct OnClickedOpenKitchen" + key);
+        KitchenCanvas.Instance.Open(key);
+
     }
 
     //키값에 해당하는 주방 가구를 구매 시도하는 함수

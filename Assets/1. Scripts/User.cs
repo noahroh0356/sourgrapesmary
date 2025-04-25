@@ -296,6 +296,13 @@ public class User : MonoBehaviour
     }
 
 
+    public void AddRuby(int r)
+    {
+        userData.ruby += r;
+        SaveMgr.SaveData<UserData>("UserData", userData);
+
+    }
+
     public void AddGatchaCoin(int c)
     {
         userData.gatchaCoin += c;
@@ -325,7 +332,8 @@ public class User : MonoBehaviour
 
         public int level; // 레벨 
         public int exp; //경험치 - 메인 퀘스트를 통해서 획득
-        public int coin;
+        public int coin; //acon으로 변경?
+        public int ruby;
         public int gatchaCoin;
         public List<UserFurniture> userFurnitureList = new List<UserFurniture>();
         public List<UserKitchen> userKitchenList = new List<UserKitchen>();

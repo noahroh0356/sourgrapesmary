@@ -189,6 +189,10 @@ public class KitchenData
 {
     public string key;
     public string nextProductKey;
+    public Sprite thum;
+    public string name;
+    public int abilityLv;
+
     public KitchenPlaceType kitchenPlaceType;
     public int price;
     public float reduceMakingTime=0.2f;

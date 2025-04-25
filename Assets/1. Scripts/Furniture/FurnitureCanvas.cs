@@ -19,7 +19,7 @@ public class FurnitureCanvas : MonoBehaviour
             if (instance == null)
                 instance = FindFirstObjectByType<FurnitureCanvas>(FindObjectsInactive.Include);
 
-            return Instance;
+            return instance;
         }
     }
 
