@@ -10181,9 +10181,13 @@ MonoBehaviour:
   - key: fireFox
     name: fireFox
     price: 50000
-    thum: {fileID: 21300000, guid: 1f15fac74955c4a03bb14f0fc8445fa8, type: 3}
+    thum: {fileID: 21300000, guid: ca7d0e1221a8c492abf6143f059af13d, type: 3}
     foxPrefab: {fileID: 838752495}
-    abilities: []
+    abilities:
+    - abilityType: 2
+      abiltyValue: 1.5
+    - abilityType: 1
+      abiltyValue: 0.5
   foxes: []
   currentfoxes: []
 --- !u!1 &286342170
@@ -45050,51 +45054,51 @@ MonoBehaviour:
   - mainQuestType: 3
     goal: 1
     goalString: table0_1
-    title: "\uCCAB\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uCCAB\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar0_1
-    title: "\uCCAB\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uCCAB\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 3
     goal: 1
     goalString: table1_1
-    title: "\uB450\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uB450\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar1_1
-    title: "\uB450\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uB450\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 3
     goal: 1
     goalString: table2_1
-    title: "\uC138\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uC138\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar2_1
-    title: "\uC138\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uC138\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 3
     goal: 1
     goalString: table3_1
-    title: "\uB124\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uB124\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar3_1
-    title: "\uB124\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uB124\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 3
     goal: 1
     goalString: table4_1
-    title: "\uB2E4\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uB2E4\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar4_1
-    title: "\uB2E4\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uB2E4\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 3
     goal: 1
     goalString: table5_1
-    title: "\uC5EC\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uAC15\uD654"
+    title: "\uC5EC\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar5_1
-    title: "\uC5EC\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uAC15\uD654"
+    title: "\uC5EC\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
   - mainQuestType: 2
     goal: 1000
     goalString: 

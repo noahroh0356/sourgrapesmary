@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Boomlagoon.JSON;
+
 
 public class DataMgr : MonoBehaviour
 {
     void Start()
     {
+
+        TextAsset tAsset = Resources.Load<TextAsset>("JSON/MainQuest");
+        JSONObject jObj = JSONObject.Parse(tAsset.text);
+
+        Debug.Log(jObj["MainQuest"]);
+        Debug.Log(jObj.GetArray("MainQuest"));
+
         int coin = PlayerPrefs.GetInt("coin", 0);
 
         string item0 = PlayerPrefs.GetString("item0", "false");
