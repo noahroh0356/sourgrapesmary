@@ -57,7 +57,7 @@ public class FurnitureProductPanel : MonoBehaviour
             User.Instance.userData.coin -= furnitureData.price;
             //User.Instance.UpdateCoinText();
             FurnitureManager.Instance.UpdateFurniture();
-            PorUtext.text = "업그레이드";
+            //PorUtext.text = "업그레이드";
 
         }
     }

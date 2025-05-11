@@ -123,7 +123,7 @@ public class FatJinsangCustomer : MonoBehaviour
 
                     else
                     {
-                        if (touchCount >= 22) // 10번 터치했다면
+                        if (touchCount >= 30) // 10번 터치했다면
                         {
                             StartCoroutine(StartExitMove()); // StartExitMove 함수를 호출합니다.
                             touchCount = 0; // 터치 횟수를 초기화합니다.

@@ -9,6 +9,13 @@ public class CameraManager : MonoBehaviour
     Transform cameraTr;
     public Transform rigthEnd;
 
+    public Vector2 touchStart;
+
+    public Vector2 touchEnd;
+
+    public string currentArea = "Kitchen";
+
+
     public static CameraManager Instance;
 
     public void Awake()
@@ -43,19 +50,39 @@ public class CameraManager : MonoBehaviour
 
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        //Input.mousePosition
-    //    }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            touchStart = Input.mousePosition;
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            touchEnd = Input.mousePosition;
 
-    //    else if (Input.GetMouseButtonUp(0))
-    //    {
-    //    }
-    //}
-    //현재 지역 확인, 무슨 지역에서 무슨 지역으로 이동할지 설정 
+            float swipeDistanceX = touchStart.x - touchEnd.x;
 
+            if (Mathf.Abs(swipeDistanceX) > 70f)
+            {
+                if (swipeDistanceX > 0)
+                {
+                    if (currentArea == "Restaurant")
+                    {
+                        MoveTo("Kitchen");
+                        currentArea = "Kitchen";
+                    }
+                }
+                else
+                {
+                    if (currentArea == "Kitchen")
+                    {
+                        MoveTo("Restaurant");
+                        currentArea = "Restaurant";
+                    }
+                }
+            }
+        }
+    }
 
     IEnumerator CoMoveTo(Vector2 targetPoint,string areaName)
     {
