@@ -2,7 +2,7 @@
   "MyQuest": [
     {
       "No": "1",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_0",
       "Title": "[상점]에서 첫번째 테이블로 나무 탁자를 구매해봐!",
@@ -11,7 +11,7 @@
     },
     {
       "No": "2",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_0",
       "Title": "첫번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -20,7 +20,7 @@
     },
     {
       "No": "3",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "1",
       "GoalString": null,
       "Title": "손님의 말풍선을 터치해 주문을 받아봐!",
@@ -29,7 +29,7 @@
     },
     {
       "No": "4",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "1",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -38,7 +38,7 @@
     },
     {
       "No": "5",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_0",
       "Title": "두번째 테이블로 나무 탁자를 구매해봐!",
@@ -47,7 +47,7 @@
     },
     {
       "No": "6",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "3",
       "GoalString": null,
       "Title": "[여기여우!] 버튼을 눌러 손님을 불러봐!",
@@ -56,7 +56,7 @@
     },
     {
       "No": "7",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -65,7 +65,7 @@
     },
     {
       "No": "8",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "2",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -74,7 +74,7 @@
     },
     {
       "No": "9",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_0",
       "Title": "두번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -83,7 +83,7 @@
     },
     {
       "No": "10",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "3",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -92,7 +92,7 @@
     },
     {
       "No": "11",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "4",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -101,7 +101,7 @@
     },
     {
       "No": "12",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "3",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -110,7 +110,7 @@
     },
     {
       "No": "13",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -119,7 +119,7 @@
     },
     {
       "No": "14",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "northpoleFox",
       "Title": "[상점]에서 북극 여우를 고용해봐!",
@@ -128,7 +128,7 @@
     },
     {
       "No": "15",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table2_0",
       "Title": "세번째 테이블로 나무 탁자를 구매해봐!",
@@ -137,7 +137,7 @@
     },
     {
       "No": "16",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "4",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -146,7 +146,7 @@
     },
     {
       "No": "17",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_0",
       "Title": "세번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -155,7 +155,7 @@
     },
     {
       "No": "18",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "6",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -164,7 +164,7 @@
     },
     {
       "No": "19",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "5",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -173,7 +173,7 @@
     },
     {
       "No": "20",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -182,7 +182,7 @@
     },
     {
       "No": "21",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_0",
       "Title": "네번째 테이블로 나무 탁자를 구매해봐!",
@@ -191,7 +191,7 @@
     },
     {
       "No": "22",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "5",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -200,7 +200,7 @@
     },
     {
       "No": "23",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "7",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -209,7 +209,7 @@
     },
     {
       "No": "24",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_0",
       "Title": "네번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -218,7 +218,7 @@
     },
     {
       "No": "25",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "redFox",
       "Title": "붉은 여우를 고용해봐!",
@@ -227,7 +227,7 @@
     },
     {
       "No": "26",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "6",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -236,7 +236,7 @@
     },
     {
       "No": "27",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_0",
       "Title": "다섯번째 테이블로 나무 탁자를 구매해봐!",
@@ -245,7 +245,7 @@
     },
     {
       "No": "28",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "8",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -254,7 +254,7 @@
     },
     {
       "No": "29",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_0",
       "Title": "다섯번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -263,7 +263,7 @@
     },
     {
       "No": "30",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -272,7 +272,7 @@
     },
     {
       "No": "31",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "6",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -281,7 +281,7 @@
     },
     {
       "No": "32",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "7",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -290,7 +290,7 @@
     },
     {
       "No": "33",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_0",
       "Title": "여섯번째 테이블로 나무 탁자를 구매해봐!",
@@ -299,7 +299,7 @@
     },
     {
       "No": "34",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "redFox",
       "Title": "붉은 여우를 고용해봐!",
@@ -308,7 +308,7 @@
     },
     {
       "No": "35",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "9",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -317,7 +317,7 @@
     },
     {
       "No": "36",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "7",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -326,7 +326,7 @@
     },
     {
       "No": "37",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_0",
       "Title": "여섯번째 디캔터로 기본 디캔더를 구매해봐!",
@@ -335,7 +335,7 @@
     },
     {
       "No": "38",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -344,7 +344,7 @@
     },
     {
       "No": "39",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "10",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -353,7 +353,7 @@
     },
     {
       "No": "40",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "8",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -362,7 +362,7 @@
     },
     {
       "No": "41",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_1",
       "Title": "첫번째 테이블을 업그레이드해봐!",
@@ -371,7 +371,7 @@
     },
     {
       "No": "42",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "10",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -380,7 +380,7 @@
     },
     {
       "No": "43",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_1",
       "Title": "첫번째 디캔터를 업그레이드 해봐!",
@@ -389,7 +389,7 @@
     },
     {
       "No": "44",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "11",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -398,7 +398,7 @@
     },
     {
       "No": "45",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -407,7 +407,7 @@
     },
     {
       "No": "46",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_1",
       "Title": "두번째 테이블을 업그레이드해봐!",
@@ -416,7 +416,7 @@
     },
     {
       "No": "47",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "9",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -425,7 +425,7 @@
     },
     {
       "No": "48",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "10",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -434,7 +434,7 @@
     },
     {
       "No": "49",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_1",
       "Title": "두번째 디캔터를 업그레이드 해봐!",
@@ -443,7 +443,7 @@
     },
     {
       "No": "50",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "11",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -452,7 +452,7 @@
     },
     {
       "No": "51",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table2_1",
       "Title": "세번째 테이블을 업그레이드해봐!",
@@ -461,7 +461,7 @@
     },
     {
       "No": "52",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -470,7 +470,7 @@
     },
     {
       "No": "53",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "9",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -479,7 +479,7 @@
     },
     {
       "No": "54",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_1",
       "Title": "세번째 디캔터를 업그레이드 해봐!",
@@ -488,7 +488,7 @@
     },
     {
       "No": "55",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "12",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -497,7 +497,7 @@
     },
     {
       "No": "56",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_1",
       "Title": "네번째 테이블을 업그레이드해봐!",
@@ -506,7 +506,7 @@
     },
     {
       "No": "57",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "12",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -515,7 +515,7 @@
     },
     {
       "No": "58",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "desrtFox",
       "Title": "사막 여우를 고용해봐!",
@@ -524,7 +524,7 @@
     },
     {
       "No": "59",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_1",
       "Title": "네번째 디캔터를 업그레이드 해봐!",
@@ -533,7 +533,7 @@
     },
     {
       "No": "60",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -542,7 +542,7 @@
     },
     {
       "No": "61",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_1",
       "Title": "다섯번째 테이블을 업그레이드해봐!",
@@ -551,7 +551,7 @@
     },
     {
       "No": "62",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -560,7 +560,7 @@
     },
     {
       "No": "63",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_1",
       "Title": "다섯번째 디캔터를 업그레이드 해봐!",
@@ -569,7 +569,7 @@
     },
     {
       "No": "64",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "13",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -578,7 +578,7 @@
     },
     {
       "No": "65",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_1",
       "Title": "여섯번째 테이블을 업그레이드해봐!",
@@ -587,7 +587,7 @@
     },
     {
       "No": "66",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -596,7 +596,7 @@
     },
     {
       "No": "67",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -605,7 +605,7 @@
     },
     {
       "No": "68",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_1",
       "Title": "여섯번째 디캔터를 업그레이드 해봐!",
@@ -614,7 +614,7 @@
     },
     {
       "No": "69",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -623,7 +623,7 @@
     },
     {
       "No": "70",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_2",
       "Title": "첫번째 테이블을 업그레이드해봐!",
@@ -632,7 +632,7 @@
     },
     {
       "No": "71",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -641,7 +641,7 @@
     },
     {
       "No": "72",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_2",
       "Title": "첫번째 디캔터를 업그레이드 해봐!",
@@ -650,7 +650,7 @@
     },
     {
       "No": "73",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -659,7 +659,7 @@
     },
     {
       "No": "74",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -668,7 +668,7 @@
     },
     {
       "No": "75",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_2",
       "Title": "두번째 테이블을 업그레이드해봐!",
@@ -677,7 +677,7 @@
     },
     {
       "No": "76",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -686,7 +686,7 @@
     },
     {
       "No": "77",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_2",
       "Title": "두번째 디캔터를 업그레이드 해봐!",
@@ -695,7 +695,7 @@
     },
     {
       "No": "78",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -704,7 +704,7 @@
     },
     {
       "No": "79",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table2_2",
       "Title": "세번째 테이블을 업그레이드해봐!",
@@ -713,7 +713,7 @@
     },
     {
       "No": "80",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -722,7 +722,7 @@
     },
     {
       "No": "81",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_2",
       "Title": "세번째 디캔터를 업그레이드 해봐!",
@@ -731,7 +731,7 @@
     },
     {
       "No": "82",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "15",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -740,7 +740,7 @@
     },
     {
       "No": "83",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_2",
       "Title": "네번째 테이블을 업그레이드해봐!",
@@ -749,7 +749,7 @@
     },
     {
       "No": "84",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "tibetFox",
       "Title": "티벳 여우를 고용해봐!",
@@ -758,7 +758,7 @@
     },
     {
       "No": "85",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -767,7 +767,7 @@
     },
     {
       "No": "86",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_2",
       "Title": "네번째 디캔터를 업그레이드 해봐!",
@@ -776,7 +776,7 @@
     },
     {
       "No": "87",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -785,7 +785,7 @@
     },
     {
       "No": "88",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_2",
       "Title": "다섯번째 테이블을 업그레이드해봐!",
@@ -794,7 +794,7 @@
     },
     {
       "No": "89",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -803,7 +803,7 @@
     },
     {
       "No": "90",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -812,7 +812,7 @@
     },
     {
       "No": "91",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_2",
       "Title": "다섯번째 디캔터를 업그레이드 해봐!",
@@ -821,7 +821,7 @@
     },
     {
       "No": "92",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -830,7 +830,7 @@
     },
     {
       "No": "93",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_2",
       "Title": "여섯번째 테이블을 업그레이드해봐!",
@@ -839,7 +839,7 @@
     },
     {
       "No": "94",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -848,7 +848,7 @@
     },
     {
       "No": "95",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_2",
       "Title": "여섯번째 디캔터를 업그레이드 해봐!",
@@ -857,7 +857,7 @@
     },
     {
       "No": "96",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -866,7 +866,7 @@
     },
     {
       "No": "97",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_3",
       "Title": "첫번째 테이블을 업그레이드해봐!",
@@ -875,7 +875,7 @@
     },
     {
       "No": "98",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -884,7 +884,7 @@
     },
     {
       "No": "99",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_3",
       "Title": "첫번째 디캔터를 업그레이드 해봐!",
@@ -893,7 +893,7 @@
     },
     {
       "No": "100",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "17",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -902,7 +902,7 @@
     },
     {
       "No": "101",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "18",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -911,7 +911,7 @@
     },
     {
       "No": "102",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_3",
       "Title": "두번째 테이블을 업그레이드해봐!",
@@ -920,7 +920,7 @@
     },
     {
       "No": "103",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "19",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -929,7 +929,7 @@
     },
     {
       "No": "104",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_3",
       "Title": "두번째 디캔터를 업그레이드 해봐!",
@@ -938,7 +938,7 @@
     },
     {
       "No": "105",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "18",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -947,7 +947,7 @@
     },
     {
       "No": "106",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "18",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -956,7 +956,7 @@
     },
     {
       "No": "107",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table2_3",
       "Title": "세번째 테이블을 업그레이드해봐!",
@@ -965,7 +965,7 @@
     },
     {
       "No": "108",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -974,7 +974,7 @@
     },
     {
       "No": "109",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_3",
       "Title": "세번째 디캔터를 업그레이드 해봐!",
@@ -983,7 +983,7 @@
     },
     {
       "No": "110",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -992,7 +992,7 @@
     },
     {
       "No": "111",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_3",
       "Title": "네번째 테이블을 업그레이드해봐!",
@@ -1001,7 +1001,7 @@
     },
     {
       "No": "112",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_3",
       "Title": "네번째 디캔터를 업그레이드 해봐!",
@@ -1010,7 +1010,7 @@
     },
     {
       "No": "113",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "19",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1019,7 +1019,7 @@
     },
     {
       "No": "114",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_3",
       "Title": "다섯번째 테이블을 업그레이드해봐!",
@@ -1028,7 +1028,7 @@
     },
     {
       "No": "115",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "19",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1037,7 +1037,7 @@
     },
     {
       "No": "116",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_3",
       "Title": "다섯번째 디캔터를 업그레이드 해봐!",
@@ -1046,7 +1046,7 @@
     },
     {
       "No": "117",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1055,7 +1055,7 @@
     },
     {
       "No": "118",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_3",
       "Title": "여섯번째 테이블을 업그레이드해봐!",
@@ -1064,7 +1064,7 @@
     },
     {
       "No": "119",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_3",
       "Title": "여섯번째 디캔터를 업그레이드 해봐!",
@@ -1073,7 +1073,7 @@
     },
     {
       "No": "120",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1082,7 +1082,7 @@
     },
     {
       "No": "121",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_4",
       "Title": "첫번째 테이블을 업그레이드해봐!",
@@ -1091,7 +1091,7 @@
     },
     {
       "No": "122",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1100,7 +1100,7 @@
     },
     {
       "No": "123",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_4",
       "Title": "첫번째 디캔터를 업그레이드 해봐!",
@@ -1109,7 +1109,7 @@
     },
     {
       "No": "124",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1118,7 +1118,7 @@
     },
     {
       "No": "125",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_4",
       "Title": "두번째 테이블을 업그레이드해봐!",
@@ -1127,7 +1127,7 @@
     },
     {
       "No": "126",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1136,7 +1136,7 @@
     },
     {
       "No": "127",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_4",
       "Title": "두번째 디캔터를 업그레이드 해봐!",
@@ -1145,7 +1145,7 @@
     },
     {
       "No": "128",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1154,7 +1154,7 @@
     },
     {
       "No": "129",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1163,7 +1163,7 @@
     },
     {
       "No": "130",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "table2_4",
       "Title": "세번째 테이블을 업그레이드해봐!",
@@ -1172,7 +1172,7 @@
     },
     {
       "No": "131",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1181,7 +1181,7 @@
     },
     {
       "No": "132",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_4",
       "Title": "세번째 디캔터를 업그레이드 해봐!",
@@ -1190,7 +1190,7 @@
     },
     {
       "No": "133",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1199,7 +1199,7 @@
     },
     {
       "No": "134",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_4",
       "Title": "네번째 테이블을 업그레이드해봐!",
@@ -1208,7 +1208,7 @@
     },
     {
       "No": "135",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1217,7 +1217,7 @@
     },
     {
       "No": "136",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_4",
       "Title": "네번째 디캔터를 업그레이드 해봐!",
@@ -1226,7 +1226,7 @@
     },
     {
       "No": "137",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "20",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1235,7 +1235,7 @@
     },
     {
       "No": "138",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_4",
       "Title": "다섯번째 테이블을 업그레이드해봐!",
@@ -1244,7 +1244,7 @@
     },
     {
       "No": "139",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1253,7 +1253,7 @@
     },
     {
       "No": "140",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1262,7 +1262,7 @@
     },
     {
       "No": "141",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_4",
       "Title": "다섯번째 디캔터를 업그레이드 해봐!",
@@ -1271,7 +1271,7 @@
     },
     {
       "No": "142",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1280,7 +1280,7 @@
     },
     {
       "No": "143",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_4",
       "Title": "여섯번째 테이블을 업그레이드해봐!",
@@ -1289,7 +1289,7 @@
     },
     {
       "No": "144",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1298,7 +1298,7 @@
     },
     {
       "No": "145",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1307,7 +1307,7 @@
     },
     {
       "No": "146",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_4",
       "Title": "여섯번째 디캔터를 업그레이드 해봐!",
@@ -1316,7 +1316,7 @@
     },
     {
       "No": "147",
-      "MainQuestType": "Purchase Fox",
+      "MainQuestType": "PurchaseFox",
       "Goal": "1",
       "GoalString": "fireFox",
       "Title": "불여우를 고용해봐!",
@@ -1325,7 +1325,7 @@
     },
     {
       "No": "148",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table0_5",
       "Title": "첫번째 테이블을 업그레이드해봐!",
@@ -1334,7 +1334,7 @@
     },
     {
       "No": "149",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1343,7 +1343,7 @@
     },
     {
       "No": "150",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar0_5",
       "Title": "첫번째 디캔터를 업그레이드 해봐!",
@@ -1352,7 +1352,7 @@
     },
     {
       "No": "151",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1361,7 +1361,7 @@
     },
     {
       "No": "152",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1370,7 +1370,7 @@
     },
     {
       "No": "153",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1379,7 +1379,7 @@
     },
     {
       "No": "154",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table1_5",
       "Title": "두번째 테이블을 업그레이드해봐!",
@@ -1388,7 +1388,7 @@
     },
     {
       "No": "155",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "30",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1397,7 +1397,7 @@
     },
     {
       "No": "156",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar1_5",
       "Title": "두번째 디캔터를 업그레이드 해봐!",
@@ -1406,7 +1406,7 @@
     },
     {
       "No": "157",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1415,7 +1415,7 @@
     },
     {
       "No": "158",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "25",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1424,7 +1424,7 @@
     },
     {
       "No": "159",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table2_5",
       "Title": "세번째 테이블을 업그레이드해봐!",
@@ -1433,7 +1433,7 @@
     },
     {
       "No": "160",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1442,7 +1442,7 @@
     },
     {
       "No": "161",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar2_5",
       "Title": "세번째 디캔터를 업그레이드 해봐!",
@@ -1451,7 +1451,7 @@
     },
     {
       "No": "162",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "30",
       "GoalString": null,
       "Title": "손님이 남긴 도토리를 모아봐!",
@@ -1460,7 +1460,7 @@
     },
     {
       "No": "163",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table3_5",
       "Title": "네번째 테이블을 업그레이드해봐!",
@@ -1469,7 +1469,7 @@
     },
     {
       "No": "164",
-      "MainQuestType": "Take Order",
+      "MainQuestType": "TakeOrder",
       "Goal": "30",
       "GoalString": null,
       "Title": "손님들의 주문을 받아봐!",
@@ -1478,7 +1478,7 @@
     },
     {
       "No": "165",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar3_5",
       "Title": "네번째 디캔터를 업그레이드 해봐!",
@@ -1487,7 +1487,7 @@
     },
     {
       "No": "166",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "30",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1496,7 +1496,7 @@
     },
     {
       "No": "167",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table4_5",
       "Title": "다섯번째 테이블을 업그레이드해봐!",
@@ -1505,7 +1505,7 @@
     },
     {
       "No": "168",
-      "MainQuestType": "Play Gatcha",
+      "MainQuestType": "PlayGatcha",
       "Goal": "1",
       "GoalString": null,
       "Title": "[뽑기] 버튼을 눌러 플레이 해봐!",
@@ -1514,7 +1514,7 @@
     },
     {
       "No": "169",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar4_5",
       "Title": "다섯번째 디캔터를 업그레이드 해봐!",
@@ -1523,7 +1523,7 @@
     },
     {
       "No": "170",
-      "MainQuestType": "Call Customer",
+      "MainQuestType": "CallCustomer",
       "Goal": "100",
       "GoalString": null,
       "Title": "손님들을 더 불러봐!",
@@ -1532,7 +1532,7 @@
     },
     {
       "No": "171",
-      "MainQuestType": "Purchase Furniture",
+      "MainQuestType": "PurchaseFurniture",
       "Goal": "1",
       "GoalString": "table5_5",
       "Title": "여섯번째 테이블을 업그레이드해봐!",
@@ -1541,7 +1541,7 @@
     },
     {
       "No": "172",
-      "MainQuestType": "Purchase Kitchen",
+      "MainQuestType": "PurchaseKitchen",
       "Goal": "1",
       "GoalString": "KitchenBar5_5",
       "Title": "여섯번째 디캔터를 업그레이드 해봐!",
@@ -1550,7 +1550,7 @@
     },
     {
       "No": "173",
-      "MainQuestType": "Pick Up Acon",
+      "MainQuestType": "PickUpAcon",
       "Goal": "1000",
       "GoalString": null,
       "Title": "도토리 천개 줍기에 도전해봐!",

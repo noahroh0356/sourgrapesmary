@@ -9627,6 +9627,7 @@ GameObject:
   - component: {fileID: 264014910}
   - component: {fileID: 264014912}
   - component: {fileID: 264014911}
+  - component: {fileID: 264014913}
   m_Layer: 5
   m_Name: InsidePanel
   m_TagString: Untagged
@@ -9652,8 +9653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -11}
-  m_SizeDelta: {x: 400, y: 120}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 480, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264014911
 MonoBehaviour:
@@ -9693,6 +9694,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264014909}
   m_CullTransparentMesh: 1
+--- !u!114 &264014913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264014909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 264014911}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1320005723}
+        m_TargetAssemblyTypeName: MainQuestPanel, Assembly-CSharp
+        m_MethodName: OnPanelClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1320005719}
+        m_TargetAssemblyTypeName: MainQuestPanel, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &267260445
 GameObject:
   m_ObjectHideFlags: 0
@@ -35632,7 +35701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.00002, y: -99.99992}
+  m_AnchoredPosition: {x: 27.00002, y: -125}
   m_SizeDelta: {x: 54, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847943637
@@ -45376,170 +45445,254 @@ MonoBehaviour:
     goal: 1
     goalString: table0_0
     title: "\uCCAB\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar0_0
     title: "\uCCAB\uBC88\uC9F8 \uB514\uCF04\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 2
     goal: 2
     goalString: 
     title: "\uB3C4\uD1A0\uB9AC\uC90D\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table1_0
     title: "\uB450\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 0
     goal: 5
     goalString: 
     title: "\uC190\uB2D8\uBD80\uB974\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 5
     goal: 1
     goalString: 
     title: "\uAC00\uCC60 \uBF51\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 2
     goal: 3
     goalString: 
     title: "\uB3C4\uD1A0\uB9AC\uC90D\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar1_0
     title: "\uB450\uBC88\uC9F8 \uB514\uCF04\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 1
     goal: 5
     goalString: 
     title: "\uC8FC\uBB38\uBC1B\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 0
     goal: 10
     goalString: 
     title: "\uC190\uB2D8\uBD80\uB974\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 2
     goal: 8
     goalString: 
     title: "\uB3C4\uD1A0\uB9AC\uC90D\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 5
     goal: 1
     goalString: 
     title: "\uAC00\uCC60 \uBF51\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 6
     goal: 1
     goalString: redFox
     title: "\uC5EC\uC6B0\uAD6C\uB9E4"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table2_0
     title: "\uC138\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 1
     goal: 7
     goalString: 
     title: "\uC8FC\uBB38\uBC1B\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar2_0
     title: "\uC138\uBC88\uC9F8 \uB514\uCF04\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 0
     goal: 10
     goalString: 
     title: "\uC190\uB2D8\uBD80\uB974\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 1
     goal: 8
     goalString: 
     title: "\uC8FC\uBB38\uBC1B\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 5
     goal: 1
     goalString: 
     title: "\uAC00\uCC60 \uBF51\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table3_0
     title: "\uB124\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar3_0
     title: "\uB124\uBC88\uC9F8 \uB514\uCF04\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 2
     goal: 10
     goalString: 
     title: "\uB3C4\uD1A0\uB9AC \uC90D\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 5
     goal: 1
     goalString: 
     title: "\uAC00\uCC60 \uBF51\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table4_0
     title: "\uB2E4\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar4_0
     title: "\uB2E4\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table5_0
     title: "\uC5EC\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar5_0
     title: "\uC5EC\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC0AC\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 5
     goal: 1
     goalString: 
     title: "\uAC00\uCC60 \uBF51\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table5_0
     title: "\uC5EC\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table0_1
     title: "\uCCAB\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar0_1
     title: "\uCCAB\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table1_1
     title: "\uB450\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar1_1
     title: "\uB450\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table2_1
     title: "\uC138\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar2_1
     title: "\uC138\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table3_1
     title: "\uB124\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar3_1
     title: "\uB124\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table4_1
     title: "\uB2E4\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar4_1
     title: "\uB2E4\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 3
     goal: 1
     goalString: table5_1
     title: "\uC5EC\uC12F\uBC88\uC9F8 \uD14C\uC774\uBE14 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 4
     goal: 1
     goalString: KitchenBar5_1
     title: "\uC5EC\uC12F\uBC88\uC9F8 \uB514\uCE94\uB354 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   - mainQuestType: 2
     goal: 1000
     goalString: 
     title: "\uB3C4\uD1A0\uB9AC \uC90D\uAE30"
+    aconReward1: 0
+    gatchaCoinReward2: 0
   userMainQuest:
     mainQuestType: 6
     curQuestIndex: 0
@@ -45551,6 +45704,7 @@ MonoBehaviour:
   - table_0_0
   purchaseKitchenQuestKeys:
   - KitchenBar_0_0
+  mainQuestPanel: {fileID: 1320005723}
 --- !u!4 &1051241993
 Transform:
   m_ObjectHideFlags: 0
@@ -46287,7 +46441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170, y: -99.99992}
+  m_AnchoredPosition: {x: -170, y: -125}
   m_SizeDelta: {x: 54, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084773879
@@ -47452,7 +47606,6 @@ GameObject:
   - component: {fileID: 1105910613}
   - component: {fileID: 1105910612}
   - component: {fileID: 1105910611}
-  - component: {fileID: 1105910610}
   - component: {fileID: 1105910609}
   m_Layer: 5
   m_Name: RubyShopCanvas
@@ -47473,21 +47626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cbcbf13c6c249058be53750b95cf32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1105910610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105910608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c3be40ec5f54cc7a2f35232e7aef08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thumImage: {fileID: 0}
-  nameText: {fileID: 0}
-  abilityText: {fileID: 0}
 --- !u!114 &1105910611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56814,7 +56952,6 @@ GameObject:
   - component: {fileID: 1320005722}
   - component: {fileID: 1320005721}
   - component: {fileID: 1320005723}
-  - component: {fileID: 1320005724}
   - component: {fileID: 1320005725}
   m_Layer: 5
   m_Name: MainQuestPanel
@@ -56822,7 +56959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1320005720
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56843,8 +56980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -279, y: -230}
-  m_SizeDelta: {x: 450, y: 300}
+  m_AnchoredPosition: {x: -279, y: -250}
+  m_SizeDelta: {x: 500, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1320005721
 MonoBehaviour:
@@ -56898,64 +57035,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleText: {fileID: 1628194549}
   processText: {fileID: 1440883213}
-  questButton: {fileID: 1320005724}
+  reward1Text: {fileID: 572721936}
+  reward2Text: {fileID: 114611368}
+  questButton: {fileID: 264014913}
   clickSound: {fileID: 1320005725}
---- !u!114 &1320005724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320005719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1320005721}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1320005723}
-        m_TargetAssemblyTypeName: MainQuestPanel, Assembly-CSharp
-        m_MethodName: OnPanelClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!82 &1320005725
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62626,7 +62709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -30}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 213.8385, y: 63.8385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440883213
@@ -71115,8 +71198,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 434.2892, y: 61.1413}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 360, y: 61.1413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628194549
 MonoBehaviour:
@@ -71165,8 +71248,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -84669,7 +84752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 93.99992}
+  m_AnchoredPosition: {x: 0, y: 125}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915084114

@@ -19,7 +19,9 @@ public class PanelManager : MonoBehaviour
     {
         questCanvas.SetActive(true);
         backgroundCloseArea.SetActive(true);
-        backgroundCloseArea.transform.SetAsLastSibling(); // 항상 위로 보내기
+        questCanvas.transform.SetAsLastSibling();
+
+        backgroundCloseArea.transform.SetSiblingIndex(questCanvas.transform.GetSiblingIndex() - 1); // questCanvas 바로 아래에 배치
 
     }
 

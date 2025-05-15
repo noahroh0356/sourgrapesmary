@@ -9,6 +9,8 @@ public class MainQuestPanel : MonoBehaviour
 {
     public TMP_Text titleText;
     public TMP_Text processText;
+    public TMP_Text reward1Text;
+    public TMP_Text reward2Text;
     MainQuestData mainQuestdata;
     public Button questButton; // 버튼을 수동으로 할당할 변수
 
@@ -21,7 +23,7 @@ public class MainQuestPanel : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Button>().onClick.AddListener(OnPanelClicked);
+        GetComponentInChildren<Button>().onClick.AddListener(OnPanelClicked);
         isInitialized = true; // 초기화 완료
 
     }
@@ -29,9 +31,8 @@ public class MainQuestPanel : MonoBehaviour
 
     public void CompleteQuest()
     {
-        titleText.text = "퀘스트 완료! (클릭하세요)";
+        titleText.text = "퀘스트 완료! (터치하세요)";
         isQuestCompleted = true;
-        Debug.Log("퀘스트 완료!");
     }
 
     public void OnPanelClicked()
@@ -56,6 +57,8 @@ public class MainQuestPanel : MonoBehaviour
         titleText.text = data.title.ToString();
         isQuestCompleted = false;
         processText.text = MainQuestManager.Instance.userMainQuest.process + "/" + data.goal;
+        reward1Text.text = "+"+data.aconReward1.ToString();
+        reward2Text.text = "+"+data.gatchaCoinReward2.ToString();
     }
 
     public void UpdatePanel()

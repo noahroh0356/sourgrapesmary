@@ -1,0 +1,52 @@
+{
+  "FoxDetail": [
+    {
+      "No": "1",
+      "Name": "기본 디캔터",
+      "Description": "단순하게 기본에 충실한 디캔터",
+      "Effect": "도토리 증가",
+      "Number": "1",
+      "Time": "1분마다"
+    },
+    {
+      "No": "2",
+      "Name": "꽃병 디캔터",
+      "Description": "꽃 대신 와인이 피어나는 디캔터",
+      "Effect": "디캔딩 속도 증가",
+      "Number": "0.05",
+      "Time": null
+    },
+    {
+      "No": "3",
+      "Name": "장식 디캔터",
+      "Description": "맛도 같이 예뻐지는 화려한 디캔터",
+      "Effect": "디캔딩 속도 증가",
+      "Number": "0.1",
+      "Time": null
+    },
+    {
+      "No": "4",
+      "Name": "백조 디캔터",
+      "Description": "고운 곡선처럼 와인이 부드러워지는 디캔터",
+      "Effect": "디캔딩 속도 증가",
+      "Number": "0.15",
+      "Time": null
+    },
+    {
+      "No": "5",
+      "Name": "스탠드 디캔터",
+      "Description": "안정감도 디자인도 최고인 디캔터",
+      "Effect": "디캔딩 속도 증가",
+      "Number": "0.2",
+      "Time": null
+    },
+    {
+      "No": "6",
+      "Name": "크리스탈 디캔터",
+      "Description": "와인 파티에 어울리는 눈부신 디캔터",
+      "Effect": "디캔딩 속도 증가",
+      "Number": "0.22",
+      "Time": null
+    }
+  ]
+}

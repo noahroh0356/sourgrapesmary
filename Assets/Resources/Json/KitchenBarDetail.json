@@ -1,0 +1,52 @@
+{
+  "KitchenBarDetail": [
+    {
+      "No": "1",
+      "Name": "나무 테이블",
+      "Description": "도토리와 잘 어울리는 소박한 테이블",
+      "Effect": "도토리 증가",
+      "Number": "1",
+      "Time": "1분마다"
+    },
+    {
+      "No": "2",
+      "Name": "오크 테이블",
+      "Description": "묵직하고 멋진, 장인 만든 듯한 테이블",
+      "Effect": "도토리 증가",
+      "Number": "1",
+      "Time": "1분마다"
+    },
+    {
+      "No": "3",
+      "Name": "철제 테이블",
+      "Description": "매끈매끈! 반짝반짝! 도시 감성 테이블",
+      "Effect": "도토리 증가",
+      "Number": "2",
+      "Time": "1분마다"
+    },
+    {
+      "No": "4",
+      "Name": "격자 테이블",
+      "Description": "격자 위에 유리를 덧댄 화려한 테이블",
+      "Effect": "도토리 증가",
+      "Number": "3",
+      "Time": "1분마다"
+    },
+    {
+      "No": "5",
+      "Name": "유리 테이블",
+      "Description": "투명하고 우아하게! 깔끔한 테이블",
+      "Effect": "도토리 증가",
+      "Number": "5",
+      "Time": "1분마다"
+    },
+    {
+      "No": "6",
+      "Name": "크리스탈 테이블",
+      "Description": "와인과 딱 어울리는 고급 테이블",
+      "Effect": "도토리 증가",
+      "Number": "6",
+      "Time": "1분마다"
+    }
+  ]
+}
