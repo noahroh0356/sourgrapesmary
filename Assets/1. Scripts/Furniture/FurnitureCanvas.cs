@@ -9,6 +9,10 @@ public class FurnitureCanvas : MonoBehaviour
 {
     public Image thumImage;
     public TMP_Text nameText;
+    public TMP_Text description;
+    public TMP_Text autoSpawnAcon;
+    public TMP_Text autoSpawnSec;
+
     public TMP_Text abilityText;
 
     private static FurnitureCanvas instance; // 정적 변수
@@ -27,13 +31,20 @@ public class FurnitureCanvas : MonoBehaviour
 
     public void Open(string key)
     {
-        Debug.Log("FurnitureCanvas Open" + key);
         gameObject.SetActive(true);
 
         FurnitureData furnitureData = FurnitureManager.Instance.GetFurnitureData(key);
         thumImage.sprite = furnitureData.thum;
-        nameText.text = furnitureData.name;
-        abilityText.text = "도토리 획득량 +" + furnitureData.abilityLv;
+        //nameText.text = furnitureData.name;
+        //abilityText.text = "도토리 획득량 +" + furnitureData.abilityLv;
+
+        FurnitureDetail furnitureDetail = FurnitureManager.Instance.GetFurnitureDetail(furnitureData.tableKey);
+        nameText.text = furnitureDetail.name;
+        description.text = furnitureDetail.description;
+        autoSpawnAcon.text = furnitureDetail.autoSpawnAcon.ToString();
+        autoSpawnSec.text = furnitureDetail.autoSpawnSec.ToString();
+
+
 
     }
 
