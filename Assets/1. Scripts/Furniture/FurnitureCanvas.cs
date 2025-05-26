@@ -10,10 +10,9 @@ public class FurnitureCanvas : MonoBehaviour
     public Image thumImage;
     public TMP_Text nameText;
     public TMP_Text description;
-    public TMP_Text autoSpawnAcon;
-    public TMP_Text autoSpawnSec;
+    public TMP_Text abilityInfoText;
 
-    public TMP_Text abilityText;
+    //public TMP_Text abilityText;
 
     private static FurnitureCanvas instance; // 정적 변수
     public static FurnitureCanvas Instance // 정적 속성
@@ -34,17 +33,20 @@ public class FurnitureCanvas : MonoBehaviour
         gameObject.SetActive(true);
 
         FurnitureData furnitureData = FurnitureManager.Instance.GetFurnitureData(key);
-        thumImage.sprite = furnitureData.thum;
-        //nameText.text = furnitureData.name;
-        //abilityText.text = "도토리 획득량 +" + furnitureData.abilityLv;
 
-        FurnitureDetail furnitureDetail = FurnitureManager.Instance.GetFurnitureDetail(furnitureData.tableKey);
+        string detailKeyToFind = furnitureData.tableKey;
+
+        FurnitureDetail furnitureDetail = FurnitureManager.Instance.GetFurnitureDetail(detailKeyToFind);
+
+
+        thumImage.sprite = furnitureDetail.thum;
+
         nameText.text = furnitureDetail.name;
         description.text = furnitureDetail.description;
-        autoSpawnAcon.text = furnitureDetail.autoSpawnAcon.ToString();
-        autoSpawnSec.text = furnitureDetail.autoSpawnSec.ToString();
+        //autoSpawnAcon.text = furnitureDetail.autoSpawnAcon.ToString();
+        //autoSpawnSec.text = furnitureDetail.autoSpawnSec.ToString();
 
-
+        abilityInfoText.text = string.Format("도토리를 {0}초마다 {1}개씩 얻음", furnitureDetail.autoSpawnSec, furnitureDetail.autoSpawnAcon);
 
     }
 

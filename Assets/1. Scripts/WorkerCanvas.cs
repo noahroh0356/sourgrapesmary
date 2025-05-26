@@ -8,6 +8,7 @@ public class WorkerCanvas : MonoBehaviour
 {
     public Image thumImage;
     public TMP_Text nameText;
+    public TMP_Text description;
     public TMP_Text abilityText;
 
     public static WorkerCanvas instance; // 정적 변수
@@ -30,8 +31,20 @@ public class WorkerCanvas : MonoBehaviour
         gameObject.SetActive(true);
 
         FoxData foxData = FoxManager.Instance.GetFoxData(key);
+        //string detailKeyToFind = foxData.key;
+
+
         thumImage.sprite = foxData.thum;
-        nameText.text = foxData.name;
+        thumImage.SetNativeSize();
+
+        string detailKeyToFind = foxData.key;
+
+
+        FoxDetail foxDetail = FoxManager.Instance.GetFoxDetail(detailKeyToFind);
+        nameText.text = foxDetail.name;
+        description.text = foxDetail.description;
+        abilityText.text = foxDetail.effect;
+
         //abilityText.text = "도토리 획득량 +" + foxData.abilityLv;
 
     }

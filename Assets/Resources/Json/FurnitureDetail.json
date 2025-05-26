@@ -1,34 +1,46 @@
 {
-  "FurnitureDetail": [
-    {
-      "No": "1",
-      "Name": "북극여우",
-      "Description": "새하얀 털이 복슬복슬. 부지런하고, 화이트 와인을 좋아해요.",
-      "Effect": "자동 도토리 줍기"
-    },
-    {
-      "No": "2",
-      "Name": "사막여우",
-      "Description": "커다란 귀가 매력 포인트. 멍 때리다가도 기발한 생각을 해내요.",
-      "Effect": "도토리 생성"
-    },
-    {
-      "No": "3",
-      "Name": "붉은여우",
-      "Description": "대문자 E. 친구가 참 많아 손님들이 더 북적거려요.",
-      "Effect": "손님 방문 횟수 증가"
-    },
-    {
-      "No": "4",
-      "Name": "불여우",
-      "Description": "불꽃같은 열정으로! 디캔딩을 엄청 빠르게 해줘요.",
-      "Effect": "디캔딩 속도 증가"
-    },
-    {
-      "No": "5",
-      "Name": "티뱃여우",
-      "Description": "든든하고 시크한 여우! 진상손님, 도둑들이 깜짝 놀라요.",
-      "Effect": "도둑 퇴치 시 터치 수 감소"
-    }
-  ]
+    "JSON": [
+        {
+            "key": "table0",
+            "name": "나무 테이블",
+            "description": "도토리와 잘 어울리는 소박한 테이블",
+            "autoSpawnAcon": "1",
+            "autoSpawnSec": "90"
+        },
+        {
+            "key": "table1",
+            "name": "오크 테이블",
+            "description": "묵직하고 멋진, 장인 만든 듯한 테이블",
+            "autoSpawnAcon": "1",
+            "autoSpawnSec": "60"
+        },
+        {
+            "key": "table2",
+            "name": "철제 테이블",
+            "description": "매끈매끈! 반짝반짝! 도시 감성 테이블",
+            "autoSpawnAcon": "2",
+            "autoSpawnSec": "60"
+        },
+        {
+            "key": "table3",
+            "name": "격자 테이블",
+            "description": "격자 위에 유리를 덧댄 화려한 테이블",
+            "autoSpawnAcon": "3",
+            "autoSpawnSec": "60"
+        },
+        {
+            "key": "table4",
+            "name": "유리 테이블",
+            "description": "투명하고 우아하게! 깔끔한 테이블",
+            "autoSpawnAcon": "5",
+            "autoSpawnSec": "60"
+        },
+        {
+            "key": "table5",
+            "name": "크리스탈 테이블",
+            "description": "와인과 딱 어울리는 고급 테이블",
+            "autoSpawnAcon": "6",
+            "autoSpawnSec": "60"
+        }
+    ]
 }

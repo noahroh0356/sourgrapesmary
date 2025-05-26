@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
+using System;
+using Boomlagoon.JSON;
 
 public class FoxManager : MonoBehaviour
 {
     public FoxData[] foxDatas; // 게임 상 존재하는 직원에 대한 게임 데이터
     public Fox[] foxes;
     public List<Fox> currentfoxes = new List<Fox>(); // 씬상에에 존재하는 직원
+    public FoxDetail[] foxDetail;
+
 
     public static FoxManager Instance;
 
@@ -17,6 +20,31 @@ public class FoxManager : MonoBehaviour
     {
         Instance = this;
         foxes = FindObjectsOfType<Fox>(true);
+
+
+        TextAsset textAsset = Resources.Load<TextAsset>("Json/WorkerDetail");
+        JSONObject jsonObj = JSONObject.Parse(textAsset.text);
+        JSONArray jArr = jsonObj.GetArray("JSON");
+        foxDetail = new FoxDetail[jArr.Length];
+
+        for (int i = 0; i < jArr.Length; i++)
+        {
+            foxDetail[i] = new FoxDetail();
+            foxDetail[i].key = jArr[i].Obj.GetString("key"); // ⭐ 이 줄이 있어야 합니다!
+
+            foxDetail[i].name = jArr[i].Obj.GetString("name");
+            foxDetail[i].description = jArr[i].Obj.GetString("description");
+            foxDetail[i].effect = jArr[i].Obj.GetString("effect");
+
+            //kitchenDetail[i].autoSpawnAcon = int.Parse(jArr[i].Obj.GetString("autoSpawnAcon"));
+            //kitchenDetail[i].autoSpawnSec = float.Parse(jArr[i].Obj.GetString("autoSpawnSec"));
+
+            string thumbnailFileName = jArr[i].Obj.GetString("name"); // tableKey에서 파일 이름을 가져옵니다.
+
+            foxDetail[i].thum = Resources.Load<Sprite>("Thumbnails/" + thumbnailFileName);
+
+
+        }
     }
 
     void Start()
@@ -117,6 +145,22 @@ public class FoxManager : MonoBehaviour
         return total;
     }
 
+    public FoxDetail GetFoxDetail(string keyToSearch)
+    {
+
+        for (int i = 0; i < foxDetail.Length; i++)
+
+        {
+            if (foxDetail[i].key == keyToSearch)
+            {
+
+                return foxDetail[i];
+            }
+        }
+        return null;
+
+    }
+
 
 }
 
@@ -134,6 +178,21 @@ public class FoxData
     public FoxAbility[] abilities;
 
 }
+
+[System.Serializable]
+
+public class FoxDetail
+{
+    public string key;
+    public string name;
+    public string description;
+    public string effect;
+    public Sprite thum;
+
+
+}
+
+
 
 [System.Serializable]
 public class FoxAbility

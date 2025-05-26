@@ -9,7 +9,9 @@ public class KitchenCanvas : MonoBehaviour
 {
     public Image thumImage;
     public TMP_Text nameText;
-    public TMP_Text abilityText;
+    public TMP_Text description;
+    public TMP_Text abilityInfoText;
+
 
     private static KitchenCanvas instance; // 정적 변수
     public static KitchenCanvas Instance // 정적 속성
@@ -31,9 +33,17 @@ public class KitchenCanvas : MonoBehaviour
         gameObject.SetActive(true);
 
         KitchenData kitchenData = KitchenManager.Instance.GetKitchenData(key);
-        thumImage.sprite = kitchenData.thum;
-        nameText.text = kitchenData.name;
-        abilityText.text = "도토리 획득량 +" + kitchenData.abilityLv;
+        string detailKeyToFind = kitchenData.kitchenBarKey;
+
+        KitchenDetail kitchenDetail = KitchenManager.Instance.GetKitchenDetail(detailKeyToFind);
+
+        thumImage.sprite = kitchenDetail.thum;
+        thumImage.SetNativeSize();
+
+        nameText.text = kitchenDetail.name;
+        description.text = kitchenDetail.description;
+
+        abilityInfoText.text = string.Format("디캔딩 속도가 {0}초 빨라짐", kitchenData.reduceMakingTime);
 
     }
 

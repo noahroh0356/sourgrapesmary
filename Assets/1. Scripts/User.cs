@@ -111,6 +111,15 @@ public class User : MonoBehaviour
             Debug.Log("디폴트와인추가");
 
 
+            userData.userFurnitureList.Clear();
+            UserFurniture defaultFurniture = new UserFurniture();
+            defaultFurniture.furniturekey = "tipbox_0";
+            defaultFurniture.purchased = true;
+            userData.userFurnitureList.Add(defaultFurniture);
+            defaultFurniture.setup = true;
+
+            Debug.Log("디폴트팁박추가");
+
 
             SaveMgr.SaveData<UserData>("UserData", userData);
         }
@@ -388,5 +397,5 @@ public class User : MonoBehaviour
         public string key;
         public bool open;
 
-    }
+}
 

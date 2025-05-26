@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using Boomlagoon.JSON;
 
 public class KitchenManager : MonoBehaviour
 {
     public static KitchenManager Instance;
     public KitchenBarPlace[] kitchenBarPlaces;
+    public KitchenDetail[] kitchenDetail;
+
     public Button kitchenButton;
     public Transform center;
+
 
     public KitchenData[] kitchenData;
 
@@ -17,6 +22,27 @@ public class KitchenManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        TextAsset textAsset = Resources.Load<TextAsset>("Json/KitchenDetail");
+        JSONObject jsonObj = JSONObject.Parse(textAsset.text);
+        JSONArray jArr = jsonObj.GetArray("JSON");
+        kitchenDetail = new KitchenDetail[jArr.Length];
+
+        for (int i = 0; i < jArr.Length; i++)
+        {
+            kitchenDetail[i] = new KitchenDetail();
+            kitchenDetail[i].kitchenBarKey = jArr[i].Obj.GetString("kitchenBarKey");
+            kitchenDetail[i].name = jArr[i].Obj.GetString("name");
+            kitchenDetail[i].description = jArr[i].Obj.GetString("description");
+            //kitchenDetail[i].autoSpawnAcon = int.Parse(jArr[i].Obj.GetString("autoSpawnAcon"));
+            //kitchenDetail[i].autoSpawnSec = float.Parse(jArr[i].Obj.GetString("autoSpawnSec"));
+
+            string thumbnailFileName = jArr[i].Obj.GetString("kitchenBarKey"); // tableKey에서 파일 이름을 가져옵니다.
+
+            kitchenDetail[i].thum = Resources.Load<Sprite>("Thumbnails/" + thumbnailFileName);
+
+
+        }
     }
 
     public void Start()
@@ -180,6 +206,22 @@ public class KitchenManager : MonoBehaviour
         }
     }
 
+    public KitchenDetail GetKitchenDetail(string kitchenBarKey)
+    {
+
+        for (int i = 0; i < kitchenDetail.Length; i++)
+
+        {
+            if (kitchenDetail[i].kitchenBarKey == kitchenBarKey)
+            {
+
+                return kitchenDetail[i];
+            }
+        }
+        return null;
+
+    }
+
 }
 
 
@@ -188,6 +230,7 @@ public class KitchenManager : MonoBehaviour
 public class KitchenData
 {
     public string key;
+    public string kitchenBarKey;
     public string nextProductKey;
     public Sprite thum;
     public string name;
@@ -195,8 +238,20 @@ public class KitchenData
 
     public KitchenPlaceType kitchenPlaceType;
     public int price;
-    public float reduceMakingTime=0.2f;
+    public float reduceMakingTime;
     public bool purchased; // 초기값 false
+
+}
+
+[System.Serializable]
+public class KitchenDetail
+{
+
+    public string kitchenBarKey;
+    public string name;
+    public string description;
+    public string effect;
+    public Sprite thum;
 
 }
 
