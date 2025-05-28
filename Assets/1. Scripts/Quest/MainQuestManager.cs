@@ -232,7 +232,8 @@ public enum MainQuestType
     PurchaseFurniture,
     PurchaseKitchen,
     PlayGatcha,
-    PurchaseFox
+    PurchaseFox,
+    UpgradeTipBox
 }
 
 //using System.Collections;
