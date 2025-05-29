@@ -6,5 +6,4 @@ public class TipBox : MonoBehaviour
 {
     public string key;
 
-
 }

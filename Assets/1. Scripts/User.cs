@@ -147,6 +147,36 @@ public class User : MonoBehaviour
         //}
     }
 
+    public void UpgradeTipBox(string oldKey, string newKey)
+    {
+
+        UserFurniture currentTipBox = null;
+
+        // 1. 세팅된 기존 팁박스를 찾음
+        for (int i = 0; i < userData.userFurnitureList.Count; i++)
+        {
+            UserFurniture furniture = userData.userFurnitureList[i];
+            if (furniture.furniturekey == oldKey && furniture.setup == true)
+            {
+                currentTipBox = furniture;
+                break;
+            }
+        }
+
+        if (currentTipBox != null)
+        {
+            currentTipBox.furniturekey = newKey;
+        }
+
+            UserFurniture newFurniture = GetUserFurniture(newKey);
+    newFurniture.purchased = true;
+    newFurniture.setup = true;
+
+        SaveMgr.SaveData("UserData", userData);
+
+    }
+
+
     public void AddFurniture(string key)
     {
         FurnitureData data = FurnitureManager.Instance.GetFurnitureData(key);
