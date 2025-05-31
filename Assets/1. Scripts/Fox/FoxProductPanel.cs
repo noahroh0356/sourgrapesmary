@@ -15,8 +15,12 @@ public class FoxProductPanel : MonoBehaviour
 
     public void Start()
     {
+
+   
+
         FoxManager mgr = FindObjectOfType<FoxManager>();
         foxData = mgr.GetFoxData(key);
+
         Pricetext.text = foxData.price.ToString();
 
         Button button = gameObject.AddComponent<Button>();
@@ -48,6 +52,9 @@ public class FoxProductPanel : MonoBehaviour
             MainQuestManager.Instance.DoQuest(MainQuestType.PurchaseFox);
 
             User.Instance.userData.coin -= foxData.price;
+            Transform buttonTr = transform.Find("**Button");
+            buttonTr.gameObject.SetActive(false);
+
             //User.Instance.UpdateCoinText();
             //FoxManager.Instance.UpdateFox();
             //PorUtext.text = "업그레이드";

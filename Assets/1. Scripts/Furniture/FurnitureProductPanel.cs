@@ -12,15 +12,26 @@ public class FurnitureProductPanel : MonoBehaviour
     public TextMeshProUGUI Pricetext;
     public Image tableImage;
 
-
     FurnitureData furnitureData;
     
 
     public void Start()
     {
+        Transform buttonTr = transform.Find("**Button");
+
         FurnitureManager mgr = FindObjectOfType<FurnitureManager>();
         furnitureData = mgr.GetFurnitureData(key);
-        Pricetext.text = furnitureData.price.ToString();
+
+        if (!string.IsNullOrEmpty(furnitureData.nextfurniturekey))
+        {
+            Pricetext.text = furnitureData.price.ToString();
+            buttonTr.gameObject.SetActive(true);
+        }
+
+        else
+        {
+            buttonTr.gameObject.SetActive(false);
+        }
 
         //버튼 컴포넌트를 동적으로(런타임 실행 중) 추가하기
         Button button = gameObject.AddComponent< Button > ();

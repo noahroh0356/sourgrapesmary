@@ -11363,6 +11363,7 @@ MonoBehaviour:
     description: "\uC774\uC81C \uD301\uB3C4 \uAC04\uD3B8\uD558\uAC8C \uD0A4\uC624\uC2A4\uD06C\uB85C!"
   aconAmount: 0
   tipboxCanvas: {fileID: 357990559}
+  aconText: {fileID: 1517468037}
 --- !u!1 &299038272
 GameObject:
   m_ObjectHideFlags: 0
@@ -14686,7 +14687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &357990558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22014,7 +22015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &525902631
 Transform:
   m_ObjectHideFlags: 0
@@ -31728,8 +31729,13 @@ MonoBehaviour:
   - {fileID: 2124957921}
   - {fileID: 431770328}
   - {fileID: 824389882}
+  buttons:
+  - {fileID: 2116708873}
+  - {fileID: 727366541}
+  - {fileID: 857960997}
   activePanel: {fileID: 431770328}
   first: 0
+  furnitureProductPanelTr: {fileID: 0}
 --- !u!114 &727366544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38160,8 +38166,13 @@ MonoBehaviour:
   - {fileID: 2124957921}
   - {fileID: 431770328}
   - {fileID: 824389882}
+  buttons:
+  - {fileID: 2116708873}
+  - {fileID: 727366541}
+  - {fileID: 857960997}
   activePanel: {fileID: 824389882}
   first: 0
+  furnitureProductPanelTr: {fileID: 0}
 --- !u!114 &857961000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39034,6 +39045,7 @@ GameObject:
   - component: {fileID: 875904953}
   - component: {fileID: 875904952}
   - component: {fileID: 875904951}
+  - component: {fileID: 875904954}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -39104,10 +39116,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WorkerCanvas, Assembly-CSharp
-        m_MethodName: CloseButton
-        m_Mode: 1
+      - m_Target: {fileID: 357990557}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -39154,6 +39166,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875904949}
   m_CullTransparentMesh: 1
+--- !u!114 &875904954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875904949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b88f3983343e4e1dbb5319874c1cd80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopCanvas: {fileID: 357990557}
+  bgmObject: {fileID: 0}
+  gatchaBgmObject: {fileID: 0}
+  gatchaHead: {fileID: 0}
 --- !u!1 &883062650
 GameObject:
   m_ObjectHideFlags: 0
@@ -69206,7 +69234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b2333c78b9b0c4ca990384846c136cc4, type: 2}
   m_sharedMaterial: {fileID: -5308199902528745543, guid: b2333c78b9b0c4ca990384846c136cc4, type: 2}
@@ -97018,8 +97046,13 @@ MonoBehaviour:
   - {fileID: 2124957921}
   - {fileID: 431770328}
   - {fileID: 824389882}
+  buttons:
+  - {fileID: 2116708873}
+  - {fileID: 727366541}
+  - {fileID: 857960997}
   activePanel: {fileID: 2124957921}
   first: 0
+  furnitureProductPanelTr: {fileID: 0}
 --- !u!114 &2116708876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98249,7 +98282,7 @@ MonoBehaviour:
   userData:
     level: 0
     exp: 0
-    coin: 500
+    coin: 100000
     ruby: 0
     gatchaCoin: 100
     userFurnitureList: []

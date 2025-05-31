@@ -53,7 +53,7 @@ public class TablePlaceProducts : MonoBehaviour
             {
                 if (panel.key == furnitureData.nextfurniturekey)
                 {
-                    Debug.Log(furnitureData.nextfurniturekey + "키값맞는패널활성");
+                    //Debug.Log(furnitureData.nextfurniturekey + "키값맞는패널활성");
                     panel.gameObject.SetActive(true);
                     return; // 찾았으면 루프 종료
                 }

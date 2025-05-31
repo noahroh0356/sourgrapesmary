@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TipBoxManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class TipBoxManager : MonoBehaviour
     float aconPerSec = 0.5f;
     public float aconAmount = 0; // 충전된 양
     public TipBoxCanvas tipboxCanvas;
+
+    public TMP_Text aconText;
 
     public static TipBoxManager Instance;
 
@@ -67,7 +70,10 @@ public class TipBoxManager : MonoBehaviour
         aconAmount = PlayerPrefs.GetFloat("TipBoxAcon", 0);
         string lasTimeStr = PlayerPrefs.GetString("TipBoxLastTime", null);
 
-        if (lasTimeStr != null)
+        Debug.Log("tipboxmanager start()"+lasTimeStr);
+
+
+        if (string.IsNullOrEmpty(lasTimeStr) == false)
         {
             DateTime lastTime = DateTime.Parse(lasTimeStr);
             int pastSec = (int)((DateTime.Now - lastTime)*0.5f).TotalSeconds;
@@ -77,7 +83,14 @@ public class TipBoxManager : MonoBehaviour
         }
 
         StartCoroutine(CoFillTipBox());
+        InvokeRepeating("UpdateText", 60, 60);
     }
+
+    public void UpdateText()
+    {
+        aconText.text = aconAmount.ToString();
+    }
+
 
     public void OnClickButton()
     {
@@ -120,6 +133,8 @@ public class TipBoxManager : MonoBehaviour
     {
         while (true)
         {
+            Debug.Log("aconamount텍스x");
+            //aconText.text = aconAmount.ToString();
             yield return new WaitForSeconds(1);
             aconAmount += aconPerSec;
             PlayerPrefs.SetFloat("TipBoxAcon", aconAmount);

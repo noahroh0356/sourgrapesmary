@@ -14,9 +14,25 @@ public class KitchenBarProduct : MonoBehaviour
 
     public void Start()
     {
+
+        Transform buttonTr = transform.Find("**Button");
+
+
         KitchenManager mgr = FindObjectOfType<KitchenManager>();
         kitchenData = mgr.GetKitchenData(key);
-        priceText.text = kitchenData.price.ToString();
+
+        if (!string.IsNullOrEmpty(kitchenData.nextProductKey))
+        {
+            priceText.text = kitchenData.price.ToString();
+            buttonTr.gameObject.SetActive(true);
+        }
+
+        else
+        {
+            buttonTr.gameObject.SetActive(false);
+        }
+
+        //priceText.text = kitchenData.price.ToString();
 
         Button button = gameObject.AddComponent<Button>();
         button.onClick.AddListener(OnClickedOpenKitchen);

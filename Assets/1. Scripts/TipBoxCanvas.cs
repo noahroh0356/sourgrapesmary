@@ -29,6 +29,8 @@ public class TipBoxCanvas : MonoBehaviour
         Debug.Log("썸네일 스프라이트: " + (tipBoxData.thum == null ? "null" : tipBoxData.thum.name));
 
         thumImage.sprite = tipBoxData.thum;
+        thumImage.SetNativeSize();
+
     }
 
 

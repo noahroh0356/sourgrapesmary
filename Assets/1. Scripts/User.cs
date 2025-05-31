@@ -10,20 +10,39 @@ public class User : MonoBehaviour
 
     public UserFurniture GetSetUpFurniture(FurniturePlace furniturePlace)
     {
+
         for (int i = 0; i < userData.userFurnitureList.Count; i++)
         {
             if (userData.userFurnitureList[i].setup == false)
                 continue;
 
             FurnitureData furnitureData = FurnitureManager.Instance.GetFurnitureData(userData.userFurnitureList[i].furniturekey);
+            if (furnitureData == null) // ⭐ 이 부분이 핵심적인 안전 장치
+            {
+                Debug.LogError($"[NullRef] FurnitureData not found for key: {userData.userFurnitureList[i].furniturekey}. Please check your FurnitureManager data or saved UserData for invalid keys.");
+                continue; // 해당 가구 키가 유효하지 않으면 다음 항목으로 넘어갑니다.
+            }
 
             if (furnitureData.furniturePlace == furniturePlace)
             {
                 return userData.userFurnitureList[i];
-
             }
         }
         return null;
+        //for (int i = 0; i < userData.userFurnitureList.Count; i++)
+        //{
+        //    if (userData.userFurnitureList[i].setup == false)
+        //        continue;
+
+        //    FurnitureData furnitureData = FurnitureManager.Instance.GetFurnitureData(userData.userFurnitureList[i].furniturekey);
+
+        //    if (furnitureData.furniturePlace == furniturePlace)
+        //    {
+        //        return userData.userFurnitureList[i];
+
+        //    }
+        //}
+        //return null;
 
     }
 
