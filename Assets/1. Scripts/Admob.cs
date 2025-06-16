@@ -12,7 +12,7 @@ public class AdMob : MonoBehaviour
         MobileAds.Initialize((InitializationStatus initStatus) => {
             Debug.Log("AdMob 초기화 완료");
 
-            LoadAd(AdUnitType.IS);
+            LoadAd(AdUnitType.IS); // RV는 RV로
         });
     }
 
@@ -44,25 +44,25 @@ public class AdMob : MonoBehaviour
                 Debug.Log("Loading the interstitial ad.");
 
                 // create our request used to load the ad.
-                //var adRequest = new AdRequest.Builder().Build();
+                var adRequest = new AdRequest();
 
 
 
                 //// send the request to load the ad.
-                //InterstitialAd.Load(ISUnitId, adRequest,
-                //    (InterstitialAd ad, LoadAdError error) =>
-                //    {
-                //        if (error != null || ad == null)
-                //        {
-                //            Debug.LogError("전면 광고 로드 실패 : " + error);
-                //            return;
-                //        }
+                InterstitialAd.Load(ISUnitId, adRequest,
+                    (InterstitialAd ad, LoadAdError error) =>
+                    {
+                        if (error != null || ad == null)
+                        {
+                            Debug.LogError("전면 광고 로드 실패 : " + error);
+                            return;
+                        }
 
-                //        Debug.Log("Interstitial ad loaded with response : " + ad.GetResponseInfo());
+                        Debug.Log("Interstitial ad loaded with response : " + ad.GetResponseInfo());
 
-                //        interstitialAd = ad;
-                //        RegisterISEventHandlers(interstitialAd);
-                //    });
+                        interstitialAd = ad;
+                        RegisterISEventHandlers(interstitialAd);
+                    });
                 break;
         }
 

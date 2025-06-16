@@ -14725,6 +14725,7 @@ MonoBehaviour:
   capacityText: {fileID: 1880405617}
   amountText: {fileID: 1854639291}
   descriptionText: {fileID: 1880405617}
+  upgradeGameobject: {fileID: 1752770495}
 --- !u!114 &357990560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16978,6 +16979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408198681}
+  - component: {fileID: 408198682}
   m_Layer: 0
   m_Name: Admob
   m_TagString: Untagged
@@ -17000,6 +17002,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2138097010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408198682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408198680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100c03588b9094670b12fdf21e3e37de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418094827
 GameObject:
   m_ObjectHideFlags: 0
@@ -79489,7 +79503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -158}
+  m_AnchoredPosition: {x: 190, y: -158}
   m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752770497
@@ -79535,7 +79549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1752770498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 357990559}
+        m_TargetAssemblyTypeName: TipBoxCanvas, Assembly-CSharp
+        m_MethodName: OnClickedUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1752770498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86243,7 +86269,7 @@ GameObject:
   - component: {fileID: 1873159568}
   - component: {fileID: 1873159567}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ReceiveButton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86312,7 +86338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1873159568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 357990559}
+        m_TargetAssemblyTypeName: TipBoxCanvas, Assembly-CSharp
+        m_MethodName: OnClickedReceive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1873159568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98450,6 +98488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138097010}
+  - component: {fileID: 2138097011}
   m_Layer: 0
   m_Name: AdsMgr
   m_TagString: Untagged
@@ -98473,6 +98512,19 @@ Transform:
   - {fileID: 408198681}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138097011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138097009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4067159486ea94eeeaeec5f987ddfd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adMob: {fileID: 408198682}
 --- !u!1 &2140913481
 GameObject:
   m_ObjectHideFlags: 0

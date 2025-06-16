@@ -70,13 +70,13 @@ public class TipBoxManager : MonoBehaviour
         aconAmount = PlayerPrefs.GetFloat("TipBoxAcon", 0);
         string lasTimeStr = PlayerPrefs.GetString("TipBoxLastTime", null);
 
-        Debug.Log("tipboxmanager start()"+lasTimeStr);
+        Debug.Log("tipboxmanager start()" + lasTimeStr);
 
 
         if (string.IsNullOrEmpty(lasTimeStr) == false)
         {
             DateTime lastTime = DateTime.Parse(lasTimeStr);
-            int pastSec = (int)((DateTime.Now - lastTime)*0.5f).TotalSeconds;
+            int pastSec = (int)((DateTime.Now - lastTime) * 0.5f).TotalSeconds;
             User.Instance.AddCoin(pastSec);
             // 0.5초에 1씩 확
             // 로그 찍어서 문자열로 확인해보기 
@@ -108,7 +108,7 @@ public class TipBoxManager : MonoBehaviour
         }
     }
 
-    public    TipBoxData GetTipBoxData(string key)
+    public TipBoxData GetTipBoxData(string key)
     {
         Debug.Log("GetTipBoxData 호출됨. 찾으려는 key: " + key);
 
@@ -148,9 +148,10 @@ public class TipBoxManager : MonoBehaviour
 
     }
 
-    private void Update()
+
+    public void ClearTipBox()
     {
-        
+        aconAmount = 0;
     }
 
 }

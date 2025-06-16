@@ -5,10 +5,23 @@ using System;
 
 public class AdsMgr : MonoBehaviour
 {
-   
+
+    public static AdsMgr Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public AdMob adMob;
+
+    private void Start()
+    {
+        adMob.Init();
+    }
+
     public void ShowAd(AdUnitType adUnitType, Action<bool> callback)
     {
-
+        adMob.ShowAd(adUnitType, callback);
     }
 }
 

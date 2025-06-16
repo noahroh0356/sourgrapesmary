@@ -15,6 +15,8 @@ public class TipBoxCanvas : MonoBehaviour
 
     public TMP_Text descriptionText;
 
+    public GameObject upgradeGameobject;
+
     TipBoxData tipBoxData;
 
     public void Open(TipBoxData tipBox)
@@ -25,11 +27,11 @@ public class TipBoxCanvas : MonoBehaviour
         nameText.text = tipBoxData.name;
         descriptionText.text = tipBoxData.description;
         capacityText.text = tipBoxData.capacity.ToString();
-        amountText.text = GetComponentInParent<TipBoxManager>().aconAmount.ToString();
         Debug.Log("썸네일 스프라이트: " + (tipBoxData.thum == null ? "null" : tipBoxData.thum.name));
-
         thumImage.sprite = tipBoxData.thum;
         thumImage.SetNativeSize();
+        UpdateCanvas();
+
 
     }
 
@@ -50,19 +52,63 @@ public class TipBoxCanvas : MonoBehaviour
             MainQuestManager.Instance.DoQuest(MainQuestType.UpgradeTipBox);
 
             TipBoxManager.Instance.UpdateTipBoxVisual(nextTipBoxData.key);
-            User.Instance.userData.coin -= tipBoxData.price;
+            User.Instance.AddCoin(-tipBoxData.price);
 
+            Open(nextTipBoxData);
+
+        }
+
+    }
+
+    public void UpdateCanvas()
+    {
+        amountText.text = GetComponentInParent<TipBoxManager>().aconAmount.ToString();
+
+        if (!string.IsNullOrEmpty(tipBoxData.nextKey))
+        {
+            upgradeGameobject.SetActive(true);
+        }
+
+        else
+        {
+            upgradeGameobject.SetActive(false);
         }
     }
 
 
+    //현재까지 충전된 도토리를 얻는 코드
+    public void OnClickedReceive()
+    {
+        User.Instance.AddCoin((int)TipBoxManager.Instance.aconAmount);
+        TipBoxManager.Instance.ClearTipBox();
+        amountText.text = GetComponentInParent<TipBoxManager>().aconAmount.ToString();
+        //**받는 사운드 추가
+        UpdateCanvas();
     }
 
-    //nextTipBoxData.price; 보유한 코인 보다 적으면 업그레이드 되도록 하는데에 활용 
-    //tipBoxData.nextKey
-    //
-    //User.Instance.AddFurniture()
-    //구매 이후 화면 갱신
+    public void OnClickedAd()
+    {
+        //광고보고 두배로 리워드 받는 기능
+        AdsMgr.Instance.ShowAd(AdUnitType.IS, AdResult); //IS를 추후 RV로 수저                                                
+    }
+    //광고에 대한 결과
+    void AdResult(bool success)
+    {
+        if (success)
+        {
+            int reward = (int)TipBoxManager.Instance.aconAmount * 2;
+            User.Instance.AddCoin(reward);
+            TipBoxManager.Instance.ClearTipBox();
+        }
+    }
+
+}
+
+//nextTipBoxData.price; 보유한 코인 보다 적으면 업그레이드 되도록 하는데에 활용 
+//tipBoxData.nextKey
+//
+//User.Instance.AddFurniture()
+//구매 이후 화면 갱신
 
 
 
