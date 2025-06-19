@@ -19,7 +19,7 @@ public class AdsMgr : MonoBehaviour
         adMob.Init();
     }
 
-    public void ShowAd(AdUnitType adUnitType, Action<bool> callback)
+    public void ShowAd(AdUnitType adUnitType, Action<bool> callback) //action<bool> callback에는 팁박스 캔버스 온클릭애드 애드리절트가 담겨있음
     {
         adMob.ShowAd(adUnitType, callback);
     }

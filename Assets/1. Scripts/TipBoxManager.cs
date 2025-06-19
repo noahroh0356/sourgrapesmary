@@ -41,7 +41,7 @@ public class TipBoxManager : MonoBehaviour
             Debug.Log($"탐지된 TipBox: {tipBox.name}, key: {tipBox.key}");
         }
 
-        UserFurniture userFurniture = User.Instance.GetSetUpFurniture(FurniturePlace.tipbox);
+        UserFurniture userFurniture = User.Instance.GetSetUpFurniture(FurniturePlace.Tipbox);
 
         if (userFurniture != null)
         {
@@ -95,7 +95,9 @@ public class TipBoxManager : MonoBehaviour
     public void OnClickButton()
     {
         //tipBoxes[0].key에 해당하는 tipboxdatas에 담긴 객체를 오픈 함수의 인자로 전달하
-        tipboxCanvas.Open(GetTipBoxData(tipBoxes[0].key));
+        UserFurniture userFurniture = User.Instance.GetSetUpFurniture(FurniturePlace.Tipbox);
+
+        tipboxCanvas.Open(GetTipBoxData(userFurniture.furniturekey));
         tipboxCanvas.gameObject.SetActive(true);
 
     }
@@ -133,7 +135,6 @@ public class TipBoxManager : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("aconamount텍스x");
             //aconText.text = aconAmount.ToString();
             yield return new WaitForSeconds(1);
             aconAmount += aconPerSec;

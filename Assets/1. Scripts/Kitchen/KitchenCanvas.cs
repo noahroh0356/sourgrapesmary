@@ -43,7 +43,7 @@ public class KitchenCanvas : MonoBehaviour
         nameText.text = kitchenDetail.name;
         description.text = kitchenDetail.description;
 
-        abilityInfoText.text = string.Format("디캔딩 속도가 {0}초 빨라짐", kitchenData.reduceMakingTime);
+        abilityInfoText.text = string.Format("디캔딩 속도가 {0}% 빨라짐", kitchenDetail.reduceMakingTime * 100);
 
     }
 

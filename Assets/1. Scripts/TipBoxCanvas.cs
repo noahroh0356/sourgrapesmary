@@ -89,7 +89,7 @@ public class TipBoxCanvas : MonoBehaviour
     public void OnClickedAd()
     {
         //광고보고 두배로 리워드 받는 기능
-        AdsMgr.Instance.ShowAd(AdUnitType.IS, AdResult); //IS를 추후 RV로 수저                                                
+        AdsMgr.Instance.ShowAd(AdUnitType.RV, AdResult);                                             
     }
     //광고에 대한 결과
     void AdResult(bool success)

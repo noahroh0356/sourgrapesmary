@@ -1,6 +1,6 @@
 {
-    "mainQuestType": 1,
-    "curQuestIndex": 2,
+    "mainQuestType": 3,
+    "curQuestIndex": 0,
     "process": 0,
     "processing": true,
     "clearPurchaseFurnitureCount": 0,

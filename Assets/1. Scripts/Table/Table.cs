@@ -14,11 +14,34 @@ public class Table : MonoBehaviour
     public Image tableMenuImage;
 
 
+
     public void Awake()
     {
         tableMenuImage = GetComponentInChildren<Image>(true);
         tableMenuImage.gameObject.SetActive(false);
     }
+
+
+    //활성화 면 즉시 호출> 현재 적용되어 있다는 의미
+    private void OnEnable()
+    {
+        StartCoroutine(CoAbility()); // 코루틴: 반드시 현재 게임 오브젝트 활성화 되어 있어야함 
+    }
+
+    IEnumerator CoAbility()
+    {
+
+        FurnitureData furnitureData = FurnitureManager.Instance.GetFurnitureData(key);
+        FurnitureDetail furnitureDetail = FurnitureManager.Instance.GetFurnitureDetail(furnitureData.tableKey);
+
+        while (true)
+        {
+            yield return new WaitForSeconds(furnitureDetail.autoSpawnSec);
+            User.Instance.AddCoin(furnitureDetail.autoSpawnAcon);
+        }
+
+    }
+
 
     public void Taken(Customer cus)
     {

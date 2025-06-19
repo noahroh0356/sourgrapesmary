@@ -11356,7 +11356,7 @@ MonoBehaviour:
       \uC8FC\uBB38 \uC81C\uC791\uD55C \uBC15\uC2A4"
   - key: tipbox_5
     nextKey: 
-    price: 0
+    price: 150000
     thum: {fileID: 21300000, guid: 0c4ed18f0f0624109ab3d9469a4499be, type: 3}
     capacity: 450000
     name: "\uD301 \uD0A4\uC624\uC2A4\uD06C"
@@ -12025,7 +12025,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 0
-    reduceMakingTime: 0
     purchased: 0
 --- !u!1 &309573650
 GameObject:
@@ -22191,7 +22190,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 0
-    reduceMakingTime: 0
     purchased: 0
 --- !u!1 &529336893
 GameObject:
@@ -26339,7 +26337,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 0
-    reduceMakingTime: 0.2
     purchased: 0
 --- !u!1 &617095970
 GameObject:
@@ -27001,7 +26998,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 0
-    reduceMakingTime: 0
     purchased: 0
 --- !u!1 &628761844
 GameObject:
@@ -57847,7 +57843,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 0
-    reduceMakingTime: 0
     purchased: 0
 --- !u!1 &1260815957
 GameObject:
@@ -62628,7 +62623,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1359477658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 357990559}
+        m_TargetAssemblyTypeName: TipBoxCanvas, Assembly-CSharp
+        m_MethodName: OnClickedAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1359477658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64465,7 +64472,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 0
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar0_1
     kitchenBarKey: KitchenBar1
@@ -64475,7 +64481,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 1000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar0_2
     kitchenBarKey: KitchenBar2
@@ -64485,7 +64490,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 6000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar0_3
     kitchenBarKey: KitchenBar3
@@ -64495,7 +64499,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 24000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar0_4
     kitchenBarKey: KitchenBar4
@@ -64505,7 +64508,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 350000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar0_5
     kitchenBarKey: KitchenBar5
@@ -64515,7 +64517,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 0
     price: 430000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_0
     kitchenBarKey: KitchenBar0
@@ -64525,7 +64526,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 20
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_1
     kitchenBarKey: KitchenBar1
@@ -64535,7 +64535,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 1200
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_2
     kitchenBarKey: KitchenBar2
@@ -64545,7 +64544,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 6700
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_3
     kitchenBarKey: KitchenBar3
@@ -64555,7 +64553,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 26000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_4
     kitchenBarKey: KitchenBar4
@@ -64565,7 +64562,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 550000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar1_5
     kitchenBarKey: KitchenBar5
@@ -64575,7 +64571,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 1
     price: 750000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_0
     kitchenBarKey: KitchenBar0
@@ -64585,7 +64580,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 220
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_1
     kitchenBarKey: KitchenBar1
@@ -64595,7 +64589,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 1800
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_2
     kitchenBarKey: KitchenBar2
@@ -64605,7 +64598,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 7000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_3
     kitchenBarKey: KitchenBar3
@@ -64615,7 +64607,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 28000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_4
     kitchenBarKey: KitchenBar4
@@ -64625,7 +64616,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 750000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar2_5
     kitchenBarKey: KitchenBar5
@@ -64635,7 +64625,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 820000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_0
     kitchenBarKey: KitchenBar0
@@ -64645,7 +64634,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 350
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_1
     kitchenBarKey: KitchenBar1
@@ -64655,7 +64643,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 2400
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_2
     kitchenBarKey: KitchenBar2
@@ -64665,7 +64652,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 8500
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_3
     kitchenBarKey: KitchenBar3
@@ -64675,7 +64661,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 32000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_4
     kitchenBarKey: KitchenBar4
@@ -64685,7 +64670,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 1150000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar3_5
     kitchenBarKey: KitchenBar5
@@ -64695,7 +64679,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 3
     price: 1250000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_0
     kitchenBarKey: KitchenBar0
@@ -64705,7 +64688,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 550
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_1
     kitchenBarKey: KitchenBar1
@@ -64715,7 +64697,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 3000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_2
     kitchenBarKey: KitchenBar2
@@ -64725,7 +64706,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 9000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_3
     kitchenBarKey: KitchenBar3
@@ -64735,7 +64715,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 32000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_4
     kitchenBarKey: KitchenBar4
@@ -64745,7 +64724,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 1150000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar4_5
     kitchenBarKey: KitchenBar5
@@ -64755,7 +64733,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 4
     price: 1250000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_0
     kitchenBarKey: KitchenBar0
@@ -64765,7 +64742,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 900
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_1
     kitchenBarKey: KitchenBar1
@@ -64775,7 +64751,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 3500
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_2
     kitchenBarKey: KitchenBar2
@@ -64785,7 +64760,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 9500
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_3
     kitchenBarKey: KitchenBar3
@@ -64795,7 +64769,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 34000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_4
     kitchenBarKey: KitchenBar4
@@ -64805,7 +64778,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 1320000
-    reduceMakingTime: 0.2
     purchased: 0
   - key: KitchenBar5_5
     kitchenBarKey: KitchenBar5
@@ -64815,7 +64787,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 5
     price: 1550000
-    reduceMakingTime: 0.2
     purchased: 0
   userKitchenList: []
 --- !u!1 &1408241103
@@ -89001,7 +88972,6 @@ MonoBehaviour:
     abilityLv: 0
     kitchenPlaceType: 2
     price: 0
-    reduceMakingTime: 0
     purchased: 0
 --- !u!1 &1911865181
 GameObject:

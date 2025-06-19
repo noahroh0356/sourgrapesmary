@@ -25,6 +25,14 @@ public class RestaurantManager : MonoBehaviour
 
     private void Start()
     {
+
+        int firstOpen = PlayerPrefs.GetInt("FirstOpen");
+        if (firstOpen == 0)
+        {
+            // 튜토리얼 컷툰 시작
+            PlayerPrefs.SetInt("FirstOpen", 1);
+        }
+
         tables = FindObjectsOfType<Table>();
         StartArea();
 

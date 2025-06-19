@@ -178,13 +178,9 @@ public class User : MonoBehaviour
             if (furniture.furniturekey == oldKey && furniture.setup == true)
             {
                 currentTipBox = furniture;
+                currentTipBox.setup = false;
                 break;
             }
-        }
-
-        if (currentTipBox != null)
-        {
-            currentTipBox.furniturekey = newKey;
         }
 
             UserFurniture newFurniture = GetUserFurniture(newKey);

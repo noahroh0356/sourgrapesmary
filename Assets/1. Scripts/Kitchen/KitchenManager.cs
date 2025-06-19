@@ -238,7 +238,6 @@ public class KitchenData
 
     public KitchenPlaceType kitchenPlaceType;
     public int price;
-    public float reduceMakingTime;
     public bool purchased; // 초기값 false
 
 }
@@ -250,7 +249,8 @@ public class KitchenDetail
     public string kitchenBarKey;
     public string name;
     public string description;
-    public string effect;
+    public float reduceMakingTime; // 디캔더 제작 속도 증가율 % 단위로 적용
+
     public Sprite thum;
 
 }

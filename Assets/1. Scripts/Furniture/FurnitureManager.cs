@@ -15,7 +15,8 @@ public class FurnitureManager : MonoBehaviour
 
     public TablePlace[] tablePlaces; // 테이블 위치
     public Customer customer;
- 
+
+
 
     public static FurnitureManager Instance;
 
@@ -155,7 +156,7 @@ public enum FurniturePlace
     table3,
     table4,
     table5,
-    tipbox
+    Tipbox
 }
 
 [System.Serializable]

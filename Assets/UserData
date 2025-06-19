@@ -1,64 +1,54 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 23484,
+    "coin": 9931008,
     "ruby": 0,
-    "gatchaCoin": 2,
+    "gatchaCoin": 0,
     "userFurnitureList": [
+        {
+            "furniturekey": "tipbox_0",
+            "purchased": true,
+            "setup": false
+        },
+        {
+            "furniturekey": "table0_0",
+            "purchased": false,
+            "setup": false
+        },
+        {
+            "furniturekey": "tipbox_1",
+            "purchased": true,
+            "setup": false
+        },
+        {
+            "furniturekey": "tipbox_2",
+            "purchased": true,
+            "setup": false
+        },
+        {
+            "furniturekey": "tipbox_3",
+            "purchased": true,
+            "setup": false
+        },
+        {
+            "furniturekey": "tipbox_4",
+            "purchased": true,
+            "setup": false
+        },
         {
             "furniturekey": "tipbox_5",
             "purchased": true,
             "setup": true
-        },
-        {
-            "furniturekey": "table0_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table1_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table2_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table3_0",
-            "purchased": true,
-            "setup": true
         }
     ],
-    "userKitchenList": [
-        {
-            "kitchenkey": "KitchenBar0_0",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "kitchenkey": "KitchenBar1_0",
-            "purchased": true,
-            "setup": true
-        }
-    ],
+    "userKitchenList": [],
     "userCustomers": [
         {
             "key": "Racoon1",
             "open": true
         }
     ],
-    "userFoxes": [
-        {
-            "key": "northpoleFox",
-            "purchased": true
-        },
-        {
-            "key": "desertFox",
-            "purchased": true
-        }
-    ],
+    "userFoxes": [],
     "userWines": [
         {
             "key": "wine_0",

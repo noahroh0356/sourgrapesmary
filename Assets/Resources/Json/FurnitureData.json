@@ -251,6 +251,58 @@
             "price": "900000",
             "furniturePlace": "table5",
             "tableKey": "table5"
+        },
+        {
+            "key": "tipbox_0",
+            "nextfurniturekey": "tipbox_1",
+            "price": "200",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+        {
+            "key": "tipbox_1",
+            "nextfurniturekey": "tipbox_2",
+            "price": "1000",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+
+        {
+            "key": "tipbox_2",
+            "nextfurniturekey": "tipbox_3",
+            "price": "6000",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+        {
+            "key": "tipbox_3",
+            "nextfurniturekey": "tipbox_4",
+            "price": "12000",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+        {
+            "key": "tipbox_4",
+            "nextfurniturekey": "tipbox_5",
+            "price": "50000",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+        {
+            "key": "tipbox_4",
+            "nextfurniturekey": "tipbox_5",
+            "price": "0",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
+        },
+        {
+            "key": "tipbox_5",
+            "nextfurniturekey": "",
+            "price": "150000",
+            "furniturePlace": "Tipbox",
+            "tableKey": ""
         }
+
+
     ]
 }
