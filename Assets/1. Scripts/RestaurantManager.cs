@@ -10,6 +10,7 @@ public class RestaurantManager : MonoBehaviour
     private List<Table> availableTables = new List<Table>();
     //Table[] foundTables = FindObjectsOfType<Table>();
     public static RestaurantManager Instance;
+    public TutorialManager tutorialManager;
 
     public GameObject[] MoveAroundPoints;
 
@@ -30,6 +31,11 @@ public class RestaurantManager : MonoBehaviour
         if (firstOpen == 0)
         {
             // 튜토리얼 컷툰 시작
+            if (tutorialManager != null) // tutorialManager가 할당되었는지 확인
+            {
+                Debug.Log("튜토리얼오픈");
+                tutorialManager.StartTutorial();
+            }
             PlayerPrefs.SetInt("FirstOpen", 1);
         }
 
