@@ -108,8 +108,9 @@ public class User : MonoBehaviour
         Instance = this;
         userData = SaveMgr.LoadData<UserData>("UserData");
 
-        if (userData == null)
+        if (userData == null) // 신규유저
         {
+            PlayerPrefs.DeleteAll();
             userData = new UserData();
             userData.coin = 0;
             userData.gatchaCoin = 0;

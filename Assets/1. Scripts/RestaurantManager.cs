@@ -33,7 +33,7 @@ public class RestaurantManager : MonoBehaviour
             // 튜토리얼 컷툰 시작
             if (tutorialManager != null) // tutorialManager가 할당되었는지 확인
             {
-                Debug.Log("튜토리얼오픈");
+                Debug.Log("튜토리얼오");
                 tutorialManager.StartTutorial();
             }
             PlayerPrefs.SetInt("FirstOpen", 1);
