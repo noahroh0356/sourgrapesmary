@@ -7,6 +7,7 @@ public class GachaButton : MonoBehaviour
 {
     public GameObject[] panels;
     public GameObject activePanel;
+
     public GatchaManager gatchaManager;
 
     public GameObject bgmObject; // "BGM" 오브젝트
@@ -20,9 +21,8 @@ public class GachaButton : MonoBehaviour
 
         if (User.Instance.userData.gatchaCoin < 1)
         {
-            Debug.Log("가챠코인부족");
             activePanel.gameObject.SetActive(false);
-
+            ToastCanvas.Instance.ShowToast("가챠 코인이 부족해요!");
             return;
         }
         else

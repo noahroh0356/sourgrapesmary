@@ -52,7 +52,8 @@ public class FurnitureProductPanel : MonoBehaviour
         Debug.Log(key + "구매시도");
         if (User.Instance.userData.coin < furnitureData.price)
         {
-            Debug.Log(key + "재화부족");
+            ToastCanvas.Instance.ShowToast("도토리가 부족해요!");
+
             return;
         }
 
