@@ -113,7 +113,7 @@ public class KitchenManager : MonoBehaviour
         {
             if (waitingCustomers.Count > 0)
             {
-                Debug.Log("구매한 키친바 없음 -> 손님 퇴장");
+                ToastCanvas.Instance.ShowToast("[상점]에서 디캔더를 사야해요!");
                 StartCoroutine(waitingCustomers[0].StartExitMove(2));
                 waitingCustomers.RemoveAt(0);
 

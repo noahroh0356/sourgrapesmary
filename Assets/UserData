@@ -1,37 +1,17 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 302746,
+    "coin": 0,
     "ruby": 0,
-    "gatchaCoin": 2,
+    "gatchaCoin": 0,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
             "purchased": true,
-            "setup": false
+            "setup": true
         },
         {
             "furniturekey": "table0_0",
-            "purchased": true,
-            "setup": false
-        },
-        {
-            "furniturekey": "table1_0",
-            "purchased": true,
-            "setup": false
-        },
-        {
-            "furniturekey": "tipbox_1",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table0_1",
-            "purchased": true,
-            "setup": true
-        },
-        {
-            "furniturekey": "table1_1",
             "purchased": true,
             "setup": true
         }
