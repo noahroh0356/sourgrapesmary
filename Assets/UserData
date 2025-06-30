@@ -1,22 +1,38 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 130425,
+    "coin": 302167,
     "ruby": 0,
-    "gatchaCoin": 0,
+    "gatchaCoin": 2,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
             "purchased": true,
-            "setup": true
+            "setup": false
         },
         {
             "furniturekey": "table0_0",
             "purchased": true,
             "setup": true
+        },
+        {
+            "furniturekey": "table1_0",
+            "purchased": true,
+            "setup": true
+        },
+        {
+            "furniturekey": "tipbox_1",
+            "purchased": true,
+            "setup": true
         }
     ],
-    "userKitchenList": [],
+    "userKitchenList": [
+        {
+            "kitchenkey": "KitchenBar0_0",
+            "purchased": true,
+            "setup": true
+        }
+    ],
     "userCustomers": [
         {
             "key": "Racoon1",

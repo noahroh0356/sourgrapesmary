@@ -348,6 +348,8 @@ public class User : MonoBehaviour
         //Debug.Log("coinText.text 값: " + coinText.text);
         SaveMgr.SaveData<UserData>("UserData", userData);
 
+        CoinBoard.Instance.AddedCoin(+c); // 싱글톤 접근
+
     }
 
 
