@@ -324,7 +324,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/1. Scripts/Quest
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -332,15 +332,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 78
   m_LastFolders:
-  - Assets/1. Scripts/Quest
+  - Assets
   m_LastFoldersGridSize: 78
   m_LastProjectPath: /Users/nobyeongjun/SourGrapesMary
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 64.67908}
-    m_SelectedIDs: aa970000
-    m_LastClickedID: 38826
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2e960000
+    m_LastClickedID: 38446
     m_ExpandedIDs: 000000002e96000030960000329600003496000036960000389600003a9600003c9600003e9600004096000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000d66b0000466700003e610000406100005c620000c4610000ca610000b8610000ac620000226600002a62000026620000366200003a620000ee6e0000d46200003c620000626200000463000064620000086300006c62000042630000706200004c6300006e620000486300000c6200001262000076610000186200001c62000020620000926200007a630000d46900008c6200004a630000a6620000329f0000369f00003a9f00003e9f00002e9f0000429f00002a9f00004c640000826400007478000078780000707800009078000098780000947800008c780000ec640000b0640000b2640000ae640000d8620000e0620000966100005c6100007061000046640000b4640000ba640000c4640000ca640000d06400008c6400007463000070760000b8f0000070f3000076f300007cf3000082f3000088f300000cfb000008fb000010fb000004fb00006c7a00002c7b0000741f0600809600000e810000fc7b0000fe7b0000de7a0000007c0000421b0a00087c00000a7c00004ee2000046e2000056e20000547f0000687f0000d2490100cc490100ce490100d0490100427e00002010050028a005003ea00500742b0800922b08008c2b0800a42b0800802b0800547e0000e45d0900187f00002c8400001a840000a28a0000a68a000050920000fece0000866c0000728b0000608b00008c8c0000888c0000eaba050000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 142}
     m_GridSize: 78
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 149
@@ -464,7 +464,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 14fbffff
+      m_ExpandedIDs: 14fbffff06740000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -29,7 +29,19 @@ public class CameraManager : MonoBehaviour
     {
         float sideDistance = rigthEnd.position.x;
         Camera.main.orthographicSize = sideDistance / Camera.main.aspect;
-        
+
+        float aspect = (float)Screen.width / (float)Screen.height;
+
+        // 가로/세로 비율로 iPad 구분 (예: 4:3 또는 비슷한 비율)
+        if (aspect < 0.8f) // 4:3 비율 이하 → iPad 계열일 확률 높음
+        {
+            Camera.main.orthographicSize = 9f;
+        }
+        else
+        {
+            Camera.main.orthographicSize = 10f; // 기본값
+        }
+
     }
 
 
